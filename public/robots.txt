@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://makemypropertyz.com/sitemap.xml
+
+# Block certain paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /private/
+Disallow: /_next/static/
+Disallow: /.well-known/
+
+# Allow social media crawlers
+User-agent: facebookexternalhit/
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Host directive (preferred domain)
+Host: makemypropertyz.com
