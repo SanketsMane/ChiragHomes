@@ -74,15 +74,15 @@ export function Contact() {
     {
       icon: MapPin,
       title: 'Visit Our Office',
-      details: ['123 MG Road, Bangalore', 'Karnataka 560001, India'],
-      link: 'https://maps.google.com',
+      details: ['7, Jnanabharathi BDA Layout, Jnana Ganga Nagar, Bengaluru, Karnataka 560056'],
+      link: 'https://share.google/HQ21ShnuwgmQQCx1r',
       color: 'from-blue-500 to-blue-600'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+91 98765 43210', '+91 80 4567 8901'],
-      link: 'tel:+919876543210',
+      details: ['+91-85510-78551', '+91-85510-78551'],
+      link: 'tel:+918551078551',
       color: 'from-green-500 to-emerald-500'
     },
     {
@@ -291,7 +291,7 @@ export function Contact() {
                       type="tel"
                       {...register('phone')}
                       className="w-full px-6 py-4 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 text-lg"
-                      placeholder="+91 98765 43210"
+                      placeholder="+91-85510-78551"
                     />
                     {errors.phone && (
                       <p className="mt-2 text-red-600 font-medium">{errors.phone.message}</p>
@@ -452,7 +452,7 @@ export function Contact() {
               Find Our Office
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Located in the heart of Bangalore, our office is easily accessible and we're always ready to welcome you
+              Located in the heart of Bengaluru, our office is easily accessible and we're always ready to welcome you
             </p>
           </div>
 
@@ -518,7 +518,7 @@ export function Contact() {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-white font-semibold">Call Us</div>
-                <div className="text-primary-100">+91 98765 43210</div>
+                <div className="text-primary-100">+91-85510-78551</div>
               </div>
               
               <div className="text-center group">
@@ -534,7 +534,7 @@ export function Contact() {
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-white font-semibold">Visit Us</div>
-                <div className="text-primary-100">MG Road, Bangalore</div>
+                <div className="text-primary-100">7, Jnanabharathi BDA Layout, Jnana Ganga Nagar, Bengaluru, Karnataka 560056</div>
               </div>
             </div>
           </div>

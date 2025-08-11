@@ -10,7 +10,7 @@ const WhatsAppIcon = () => (
 );
 
 export function WhatsAppFloat() {
-  const phoneNumber = '918551078551';
+  const phoneNumber = '919945670248';
   const message = 'Hello%20MakeMyPropertyz%20Team!%20I%20need%20assistance%20with%20property%20search.';
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 

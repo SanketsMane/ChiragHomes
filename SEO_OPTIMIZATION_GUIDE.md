@@ -64,15 +64,15 @@ This comprehensive SEO guide is designed to transform MakeMyPropertyz into a hig
   "name": "MakeMyPropertyz",
   "description": "Leading real estate platform in Bangalore offering verified property listings",
   "url": "https://makemypropertyz.com",
-  "telephone": "+91-98765-43210",
+  "telephone": "+91-85510-78551",
   "email": "info@makemypropertyz.com",
   "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "123 MG Road",
-    "addressLocality": "Bangalore",
-    "addressRegion": "Karnataka",
-    "postalCode": "560001",
-    "addressCountry": "IN"
+        "@type": "PostalAddress",
+        "streetAddress": "7, Jnanabharathi BDA Layout, Jnana Ganga Nagar",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "postalCode": "560056",
+        "addressCountry": "IN"
   },
   "areaServed": "Bangalore",
   "priceRange": "₹50L - ₹5Cr",
@@ -110,10 +110,10 @@ This comprehensive SEO guide is designed to transform MakeMyPropertyz into a hig
       "numberOfRooms": "3",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Koramangala 5th Block",
-        "addressLocality": "Koramangala",
+        "streetAddress": "7, Jnanabharathi BDA Layout, Jnana Ganga Nagar",
+        "addressLocality": "Bengaluru",
         "addressRegion": "Karnataka",
-        "postalCode": "560095",
+        "postalCode": "560056",
         "addressCountry": "IN"
       }
     }
@@ -144,7 +144,7 @@ This comprehensive SEO guide is designed to transform MakeMyPropertyz into a hig
 #### 📞 **CONTACT PAGE**
 ```html
 <title>Contact MakeMyPropertyz - Get Expert Real Estate Assistance in Bangalore</title>
-<meta name="description" content="Contact MakeMyPropertyz for property buying, selling & investment guidance in Bangalore. Call +91-98765-43210 or visit our MG Road office." />
+<meta name="description" content="Contact MakeMyPropertyz for property buying, selling & investment guidance in Bangalore. Call +91-85510-78551 or visit our MG Road office." />
 
 <!-- ContactPoint Schema -->
 <script type="application/ld+json">
@@ -157,7 +157,7 @@ This comprehensive SEO guide is designed to transform MakeMyPropertyz into a hig
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+91-98765-43210",
+        "telephone": "+91-85510-78551",
         "contactType": "Sales",
         "availableLanguage": ["English", "Hindi", "Kannada"],
         "hoursAvailable": "Mo-Sa 09:00-19:00"

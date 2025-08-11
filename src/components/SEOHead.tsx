@@ -110,17 +110,17 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   "name": "MakeMyPropertyz",
-  "description": "Leading real estate platform in Bangalore offering verified property listings",
+  "description": "Leading real estate platform in Bengaluru offering verified property listings",
   "url": "https://makemypropertyz.com",
-  "telephone": "+91-98765-43210",
+  "telephone": "+91-85510-78551",
   "email": "info@makemypropertyz.com",
   "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "123 MG Road",
-    "addressLocality": "Bangalore",
-    "addressRegion": "Karnataka", 
-    "postalCode": "560001",
-    "addressCountry": "IN"
+        "@type": "PostalAddress",
+        "streetAddress": "7, Jnanabharathi BDA Layout, Jnana Ganga Nagar",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "postalCode": "560056",
+        "addressCountry": "IN"
   },
   "areaServed": "Bangalore",
   "priceRange": "₹50L - ₹5Cr",
@@ -131,9 +131,9 @@ export const organizationSchema = {
   "contactPoint": [
     {
       "@type": "ContactPoint",
-      "telephone": "+91-98765-43210",
+      "telephone": "+91-85510-78551",
       "contactType": "Sales",
-      "availableLanguage": ["English", "Hindi", "Kannada"],
+      "availableLanguage": ["English", "Hindi", "Kannada", "Tamil", "Telugu"],
       "hoursAvailable": "Mo-Sa 09:00-19:00"
     }
   ],
@@ -216,20 +216,20 @@ export const localBusinessSchema = {
   "@id": "https://makemypropertyz.com",
   "name": "MakeMyPropertyz",
   "image": "https://makemypropertyz.com/images/office.jpg",
-  "telephone": "+91-98765-43210",
+  "telephone": "+91-85510-78551",
   "email": "info@makemypropertyz.com",
   "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "123 MG Road",
-    "addressLocality": "Bangalore",
-    "addressRegion": "Karnataka",
-    "postalCode": "560001",
-    "addressCountry": "IN"
+        "@type": "PostalAddress",
+        "streetAddress": "7, Jnanabharathi BDA Layout, Jnana Ganga Nagar",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "postalCode": "560056",
+        "addressCountry": "IN"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 12.9716,
-    "longitude": 77.5946
+    "latitude": 12.946248741414733,
+    "longitude": 77.48743389416147
   },
   "url": "https://makemypropertyz.com",
   "priceRange": "₹₹₹",

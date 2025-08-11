@@ -18,14 +18,14 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: 'Bangalore\'s Emerging Neighborhoods to Watch',
-    excerpt: 'Explore up-and-coming areas in Bangalore that offer great potential for homebuyers and investors.',
-    content: 'Bangalore continues to evolve as India\'s tech capital...',
+    title: 'Bengaluru\'s Emerging Neighborhoods to Watch',
+    excerpt: 'Explore up-and-coming areas in Bengaluru that offer great potential for homebuyers and investors.',
+    content: 'Bengaluru continues to evolve as India\'s tech capital...',
     author: 'Priya Sharma',
     publishDate: '2024-01-12',
     readTime: '6 min read',
     category: 'Location Guide',
-    tags: ['Bangalore', 'Neighborhoods', 'Market Analysis'],
+    tags: ['Bengaluru', 'Neighborhoods', 'Market Analysis'],
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=400&fit=crop&crop=center',
     featured: false
   },

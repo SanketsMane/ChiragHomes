@@ -47,7 +47,7 @@ export function Hero() {
             Find Your Perfect
             <span className="text-primary-500"> Dream Home</span>
             <br />
-            in Bangalore
+            in Bengaluru
           </h1>
           
           <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-2xl">

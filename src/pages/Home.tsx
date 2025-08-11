@@ -86,7 +86,7 @@ const featuredGallery = [
     id: 1,
     image: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=3840&h=2160&fit=crop&crop=center&q=90',
     title: 'Luxury Penthouse',
-    location: 'Koramangala, Bangalore',
+    location: 'Koramangala, Bengaluru',
     price: '₹2.5 Cr',
     type: 'Penthouse',
     bedrooms: 4,
@@ -97,7 +97,7 @@ const featuredGallery = [
     id: 2,
     image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=3840&h=2160&fit=crop&crop=center&q=90',
     title: 'Modern Villa',
-    location: 'Whitefield, Bangalore',
+    location: 'Whitefield, Bengaluru',
     price: '₹1.8 Cr',
     type: 'Villa',
     bedrooms: 3,
@@ -108,7 +108,7 @@ const featuredGallery = [
     id: 3,
     image: 'https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?w=3840&h=2160&fit=crop&crop=center&q=90',
     title: 'Smart Apartment',
-    location: 'HSR Layout, Bangalore',
+    location: 'HSR Layout, Bengaluru',
     price: '₹95 L',
     type: 'Apartment',
     bedrooms: 2,
@@ -119,7 +119,7 @@ const featuredGallery = [
     id: 4,
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=3840&h=2160&fit=crop&crop=center&q=90',
     title: 'Premium Duplex',
-    location: 'Indiranagar, Bangalore',
+    location: 'Indiranagar, Bengaluru',
     price: '₹1.2 Cr',
     type: 'Duplex',
     bedrooms: 3,
@@ -130,7 +130,7 @@ const featuredGallery = [
     id: 5,
     image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=3840&h=2160&fit=crop&crop=center&q=90',
     title: 'Garden Villa',
-    location: 'Sarjapur, Bangalore',
+    location: 'Sarjapur, Bengaluru',
     price: '₹1.5 Cr',
     type: 'Villa',
     bedrooms: 4,
@@ -208,9 +208,9 @@ export function Home() {
   return (
     <>
       <SEOHead 
-        title="MakeMyPropertyz - Buy, Sell & Rent Properties in Bangalore | Best Real Estate Deals"
-        description="Find your dream property in Bangalore with MakeMyPropertyz. 1000+ verified listings, expert guidance, and transparent pricing. Buy, sell, or rent apartments, villas & luxury homes."
-        keywords="property for sale bangalore, buy property bangalore, apartments for sale, real estate bangalore, property dealers, villas for sale, property investment, RERA verified"
+        title="MakeMyPropertyz - Buy, Sell & Rent Properties in Bengaluru | Best Real Estate Deals"
+        description="Find your dream property in Bengaluru with MakeMyPropertyz. 1000+ verified listings, expert guidance, and transparent pricing. Buy, sell, or rent apartments, villas & luxury homes."
+        keywords="property for sale Bengaluru, buy property Bengaluru, apartments for sale, real estate Bengaluru, property dealers, villas for sale, property investment, RERA verified"
         canonical="https://makemypropertyz.com"
         schema={organizationSchema}
       />
@@ -267,7 +267,7 @@ export function Home() {
             </h1>
 
             <p className="text-xl sm:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto animate-fade-in-delay-2 drop-shadow-md">
-              Discover premium properties in Bangalore with our expert guidance and transparent pricing
+              Discover premium properties in Bengaluru with our expert guidance and transparent pricing
             </p>
 
             {/* CTA Buttons */}
@@ -383,7 +383,7 @@ export function Home() {
               Featured Properties
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover handpicked premium properties in Bangalore's most desirable locations
+              Discover handpicked premium properties in Bengaluru's most desirable locations
             </p>
           </div>
 
@@ -636,7 +636,7 @@ export function Home() {
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-white font-semibold">Visit Us</div>
-                <div className="text-primary-100">Bangalore, Karnataka</div>
+                <div className="text-primary-100">Bengaluru, Karnataka</div>
               </div>
             </div>
           </div>

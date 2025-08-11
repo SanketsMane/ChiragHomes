@@ -65,7 +65,7 @@ export function Header() {
               {/* Content container */}
               <div className="relative flex items-center space-x-2">
                 <span className="flex items-center space-x-1">
-                  <span className="text-sm font-bold tracking-wide">Marketplace</span>
+                  <span className="text-sm font-bold tracking-wide">Material Hub</span>
                   <div className="w-1.5 h-1.5 bg-yellow-300 rounded-full animate-pulse"></div>
                 </span>
                 <ExternalLink className="w-4 h-4 transition-all duration-300 transform group-hover:translate-x-1 group-hover:-translate-y-0.5" />
@@ -134,7 +134,7 @@ export function Header() {
                   
                   {/* Content */}
                   <div className="relative flex items-center space-x-2">
-                    <span className="text-base font-bold tracking-wide">Marketplace</span>
+                    <span className="text-base font-bold tracking-wide">Material Hub</span>
                     <div className="w-1.5 h-1.5 bg-yellow-300 rounded-full animate-pulse"></div>
                   </div>
                   <ExternalLink className="relative w-5 h-5 transition-all duration-300 transform group-hover:translate-x-1" />

@@ -132,7 +132,7 @@ export function Properties() {
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
             <div>
               <h1 className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-2">
-                Properties in Bangalore
+                Properties in Bengaluru
               </h1>
               <p className="text-lg text-gray-600">
                 {filteredProperties.length} properties found

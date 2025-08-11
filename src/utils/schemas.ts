@@ -55,7 +55,7 @@ export const generatePropertySchema = (property: PropertySchema) => {
         logo: 'https://makemypropertyz.com/images/logo.png',
         contactPoint: {
           '@type': 'ContactPoint',
-          telephone: '+91-9876543210',
+          telephone: '+91-85510-78551',
           contactType: 'customer service',
           areaServed: 'IN',
           availableLanguage: ['en', 'hi', 'kn']
@@ -200,7 +200,7 @@ export const generateLocalBusinessSchema = () => {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+91-9876543210',
+      telephone: '+91-85510-78551',
       contactType: 'customer service',
       areaServed: 'IN',
       availableLanguage: ['en', 'hi', 'kn'],
