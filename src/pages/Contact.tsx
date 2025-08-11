@@ -186,7 +186,7 @@ export function Contact() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {features.map((feature, index) => (
               <div
                 key={index}
@@ -217,7 +217,7 @@ export function Contact() {
       {/* Main Contact Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             {/* Contact Form */}
             <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-2xl border border-gray-100">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-500 rounded-2xl mb-6">
@@ -267,7 +267,7 @@ export function Contact() {
                 </div>
 
                 {/* Email and Phone */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label className="block text-base font-semibold text-gray-700 mb-3">
                       Email Address *
