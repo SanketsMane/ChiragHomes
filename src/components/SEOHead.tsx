@@ -112,8 +112,8 @@ export const organizationSchema = {
   "name": "MakeMyPropertyz",
   "description": "Leading real estate platform in Bengaluru offering verified property listings",
   "url": "https://makemypropertyz.com",
-  "telephone": "+91-85510-78551",
-  "email": "info@makemypropertyz.com",
+  "telephone": "+91 8551 07 8551",
+  "email": "contact@makemypropertyz.com",
   "address": {
         "@type": "PostalAddress",
         "streetAddress": "7, Jnanabharathi BDA Layout, Jnana Ganga Nagar",
@@ -131,7 +131,7 @@ export const organizationSchema = {
   "contactPoint": [
     {
       "@type": "ContactPoint",
-      "telephone": "+91-85510-78551",
+      "telephone": "+91 8551 07 8551",
       "contactType": "Sales",
       "availableLanguage": ["English", "Hindi", "Kannada", "Tamil", "Telugu"],
       "hoursAvailable": "Mo-Sa 09:00-19:00"
@@ -216,8 +216,8 @@ export const localBusinessSchema = {
   "@id": "https://makemypropertyz.com",
   "name": "MakeMyPropertyz",
   "image": "https://makemypropertyz.com/images/office.jpg",
-  "telephone": "+91-85510-78551",
-  "email": "info@makemypropertyz.com",
+  "telephone": "+91 8551 07 8551",
+  "email": "contact@makemypropertyz.com",
   "address": {
         "@type": "PostalAddress",
         "streetAddress": "7, Jnanabharathi BDA Layout, Jnana Ganga Nagar",

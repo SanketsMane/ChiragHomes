@@ -55,7 +55,7 @@ export const generatePropertySchema = (property: PropertySchema) => {
         logo: 'https://makemypropertyz.com/images/logo.png',
         contactPoint: {
           '@type': 'ContactPoint',
-          telephone: '+91-85510-78551',
+          telephone: '+91 8551 07 8551',
           contactType: 'customer service',
           areaServed: 'IN',
           availableLanguage: ['en', 'hi', 'kn']
@@ -195,12 +195,12 @@ export const generateLocalBusinessSchema = () => {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 12.9716,
-      longitude: 77.5946
+      latitude: 12.946248741414733,
+      longitude: 77.48743389416147
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+91-85510-78551',
+      telephone: '+91 8551 07 8551',
       contactType: 'customer service',
       areaServed: 'IN',
       availableLanguage: ['en', 'hi', 'kn'],

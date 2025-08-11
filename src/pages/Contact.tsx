@@ -2,21 +2,21 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
-  Send, 
-  CheckCircle, 
-  AlertCircle, 
-  Building, 
-  MessageCircle, 
-  Sparkles, 
-  ArrowRight, 
-  Globe, 
-  Users, 
-  Star 
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  Send,
+  CheckCircle,
+  AlertCircle,
+  Building,
+  MessageCircle,
+  Sparkles,
+  ArrowRight,
+  Globe,
+  Users,
+  Star
 } from 'lucide-react';
 
 // Contact form validation schema
@@ -52,15 +52,15 @@ export function Contact() {
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
     setSubmitError('');
-    
+
     try {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+
       console.log('Contact form submitted:', data);
       setSubmitSuccess(true);
       reset();
-      
+
       // Reset success message after 5 seconds
       setTimeout(() => setSubmitSuccess(false), 5000);
     } catch (error) {
@@ -81,15 +81,15 @@ export function Contact() {
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+91-85510-78551', '+91-85510-78551'],
+      details: ['+91 8551 07 8551', '+91 8551 07 8551'],
       link: 'tel:+918551078551',
       color: 'from-green-500 to-emerald-500'
     },
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['info@makemypropertyz.com', 'support@makemypropertyz.com'],
-      link: 'mailto:info@makemypropertyz.com',
+      details: ['contact@makemypropertyz.com',],
+      link: 'mailto:contact@makemypropertyz.com',
       color: 'from-purple-500 to-purple-600'
     },
     {
@@ -139,18 +139,18 @@ export function Contact() {
             <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 backdrop-blur-sm rounded-3xl mb-8">
               <MessageCircle className="w-10 h-10 text-white" />
             </div>
-            
+
             <h1 className="text-5xl lg:text-7xl font-heading font-bold mb-6 bg-gradient-to-r from-white via-primary-100 to-white bg-clip-text text-transparent">
               Contact Us
             </h1>
-            
+
             <p className="text-xl lg:text-2xl text-primary-100 max-w-3xl mx-auto leading-relaxed">
               Ready to find your dream property? Get in touch with our expert team today and let us help you make your property dreams a reality.
             </p>
 
             {/* Quick Contact Actions */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
+              <a
                 href="tel:+919876543210"
                 className="group bg-white text-primary-600 hover:bg-gray-50 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center space-x-2"
               >
@@ -158,8 +158,8 @@ export function Contact() {
                 <span>Call Now</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </a>
-              
-              <a 
+
+              <a
                 href="mailto:info@makemypropertyz.com"
                 className="group border-2 border-white/30 text-white hover:bg-white hover:text-primary-600 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-2 backdrop-blur-sm"
               >
@@ -188,22 +188,22 @@ export function Contact() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <div 
+              <div
                 key={index}
                 className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 relative overflow-hidden"
               >
                 {/* Gradient Background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-primary-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
+
                 <div className="relative z-10 text-center">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 group-hover:bg-primary-500 rounded-2xl mb-6 transform group-hover:scale-110 transition-all duration-300">
                     <feature.icon className="w-8 h-8 text-primary-600 group-hover:text-white" />
                   </div>
-                  
+
                   <h3 className="text-2xl font-heading font-bold text-gray-900 mb-4 group-hover:text-primary-600 transition-colors duration-300">
                     {feature.title}
                   </h3>
-                  
+
                   <p className="text-gray-600 leading-relaxed">
                     {feature.description}
                   </p>
@@ -223,11 +223,11 @@ export function Contact() {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-500 rounded-2xl mb-6">
                 <Send className="w-8 h-8 text-white" />
               </div>
-              
+
               <h2 className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6">
                 Send us a Message
               </h2>
-              
+
               <p className="text-xl text-gray-600 mb-8">
                 Fill out the form below and we'll get back to you within 24 hours
               </p>
@@ -282,7 +282,7 @@ export function Contact() {
                       <p className="mt-2 text-red-600 font-medium">{errors.email.message}</p>
                     )}
                   </div>
-                  
+
                   <div>
                     <label className="block text-base font-semibold text-gray-700 mb-3">
                       Phone Number
@@ -291,7 +291,7 @@ export function Contact() {
                       type="tel"
                       {...register('phone')}
                       className="w-full px-6 py-4 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 text-lg"
-                      placeholder="+91-85510-78551"
+                      placeholder="+91 8551 07 8551"
                     />
                     {errors.phone && (
                       <p className="mt-2 text-red-600 font-medium">{errors.phone.message}</p>
@@ -386,11 +386,11 @@ export function Contact() {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-500 rounded-2xl mb-6">
                   <Building className="w-8 h-8 text-white" />
                 </div>
-                
+
                 <h2 className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6">
                   Get in Touch
                 </h2>
-                
+
                 <p className="text-xl text-gray-600 mb-8">
                   We're here to help you find your perfect property. Reach out to us through any of these channels.
                 </p>
@@ -399,22 +399,22 @@ export function Contact() {
               {/* Contact Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {contactInfo.map((info, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 relative overflow-hidden"
                   >
                     {/* Gradient Background */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${info.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
-                    
+
                     <div className="relative z-10 text-center">
                       <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${info.color} rounded-2xl mb-6 transform group-hover:scale-110 transition-all duration-300 shadow-lg`}>
                         <info.icon className="w-8 h-8 text-white" />
                       </div>
-                      
+
                       <h3 className="text-xl font-heading font-bold text-gray-900 mb-4 group-hover:text-primary-600 transition-colors duration-300">
                         {info.title}
                       </h3>
-                      
+
                       <div className="space-y-2">
                         {info.details.map((detail, idx) => (
                           <p key={idx} className="text-gray-600 leading-relaxed">
@@ -424,7 +424,7 @@ export function Contact() {
                       </div>
 
                       {info.link && (
-                        <a 
+                        <a
                           href={info.link}
                           className="inline-flex items-center mt-4 text-primary-600 hover:text-primary-700 font-semibold transition-colors duration-300"
                         >
@@ -457,7 +457,7 @@ export function Contact() {
           </div>
 
           <div className="bg-white rounded-3xl p-4 shadow-2xl">
-            <iframe
+            {/* <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6404675444453!2d77.61106431482246!3d12.97539949087617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167f7e5d2b0b%3A0x3a3b9a58d3e3b8e7!2sMG%20Road%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1673961234567!5m2!1sen!2sin"
               width="100%"
               height="400"
@@ -466,7 +466,16 @@ export function Contact() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="rounded-2xl"
-            />
+            /> */}
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4025064110806!2d77.48485897358854!3d12.946076215440355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f2bf1547565%3A0xd993e81cfb693390!2sMake%20My%20Propertyz!5e0!3m2!1sen!2sin!4v1754897234565!5m2!1sen!2sin" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+              
+            </iframe>
           </div>
         </div>
       </section>
@@ -487,13 +496,13 @@ export function Contact() {
                 Started?
               </span>
             </h2>
-            
+
             <p className="text-xl text-primary-100 mb-10 max-w-2xl mx-auto">
               Don't wait any longer. Contact us today and take the first step towards finding your perfect property.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <a 
+              <a
                 href="tel:+919876543210"
                 className="group bg-white text-primary-600 hover:bg-gray-50 px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center space-x-3"
               >
@@ -501,8 +510,8 @@ export function Contact() {
                 <span>Call Us Now</span>
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
               </a>
-              
-              <a 
+
+              <a
                 href="#contact-form"
                 className="group border-2 border-white/30 text-white hover:bg-white hover:text-primary-600 px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-3"
               >
@@ -518,9 +527,9 @@ export function Contact() {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-white font-semibold">Call Us</div>
-                <div className="text-primary-100">+91-85510-78551</div>
+                <div className="text-primary-100">+91 8551 07 8551</div>
               </div>
-              
+
               <div className="text-center group">
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl mb-4 group-hover:bg-white/20 transition-colors duration-300">
                   <Mail className="w-6 h-6 text-white" />
@@ -528,7 +537,7 @@ export function Contact() {
                 <div className="text-white font-semibold">Email Us</div>
                 <div className="text-primary-100">info@makemypropertyz.com</div>
               </div>
-              
+
               <div className="text-center group">
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl mb-4 group-hover:bg-white/20 transition-colors duration-300">
                   <MapPin className="w-6 h-6 text-white" />

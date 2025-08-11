@@ -42,7 +42,7 @@ This file contains attribution information for all images used in the MakeMyProp
   - License: Unsplash License
 
 ## Blog Images
-- **Bangalore Skyline**: "City Buildings" by Ramón Salinero on Unsplash
+- **Bengaluru Skyline**: "City Buildings" by Ramón Salinero on Unsplash
   - URL: https://images.unsplash.com/photo-1486406146926-c627a92ad1ab
   - License: Unsplash License
 
