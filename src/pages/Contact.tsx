@@ -186,7 +186,7 @@ export function Contact() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {features.map((feature, index) => (
               <div 
                 key={index}
@@ -217,7 +217,7 @@ export function Contact() {
       {/* Main Contact Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             {/* Contact Form */}
             <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-2xl border border-gray-100">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-500 rounded-2xl mb-6">
@@ -267,7 +267,7 @@ export function Contact() {
                 </div>
 
                 {/* Email and Phone */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label className="block text-base font-semibold text-gray-700 mb-3">
                       Email Address *
@@ -458,7 +458,7 @@ export function Contact() {
 
           <div className="bg-white rounded-3xl p-4 shadow-2xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6404675444453!2d77.61106431482246!3d12.97539949087617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167f7e5d2b0b%3A0x3a3b9a58d3e3b8e7!2sMG%20Road%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1673961234567!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4025064110806!2d77.48485897358854!3d12.946076215440355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f2bf1547565%3A0xd993e81cfb693390!2sMake%20My%20Propertyz!5e0!3m2!1sen!2sin!4v1754897234565!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: 0 }}

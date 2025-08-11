@@ -247,72 +247,72 @@ export function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+        <div className="relative z-20 container-custom pt-20 sm:pt-24 lg:pt-32 pb-12 sm:pb-16 lg:pb-20">
           <div className="text-center max-w-5xl mx-auto">
             {/* Logo */}
-            <div className="mb-8 flex justify-center">
+            <div className="mb-6 sm:mb-8 flex justify-center">
               <img 
                 src="/src/assets/logo.png" 
                 alt="MakeMyPropertyz Logo" 
-                className="h-16 sm:h-20 lg:h-24 w-auto animate-fade-in drop-shadow-xl"
+                className="h-12 sm:h-16 lg:h-20 xl:h-24 w-auto animate-fade-in drop-shadow-xl"
               />
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 animate-fade-in-delay drop-shadow-lg">
+            <h1 className="heading-xl text-white mb-4 sm:mb-6 animate-fade-in-delay drop-shadow-lg">
               Find Your
               <span className="block bg-gradient-to-r from-primary-300 via-primary-200 to-primary-100 bg-clip-text text-transparent">
                 Dream Home
               </span>
             </h1>
 
-            <p className="text-xl sm:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto animate-fade-in-delay-2 drop-shadow-md">
+            <p className="text-lg sm:text-xl lg:text-2xl text-gray-100 mb-6 sm:mb-8 max-w-3xl mx-auto animate-fade-in-delay-2 drop-shadow-md leading-relaxed">
               Discover premium properties in Bengaluru with our expert guidance and transparent pricing
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in-delay-2">
+            <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 justify-center mb-12 sm:mb-16 animate-fade-in-delay-2 max-w-md mx-auto xs:max-w-none">
               <Link 
                 to="/properties"
-                className="group bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center justify-center space-x-2"
+                className="group bg-primary-500 hover:bg-primary-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center justify-center space-x-2"
               >
-                <Search className="w-5 h-5" />
+                <Search className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>Explore Properties</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
-              <button className="group border-2 border-white/80 text-white hover:bg-white hover:text-primary-600 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center space-x-2 backdrop-blur-sm">
-                <Play className="w-5 h-5" />
+              <button className="group border-2 border-white/80 text-white hover:bg-white hover:text-primary-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center space-x-2 backdrop-blur-sm">
+                <Play className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>Watch Demo</span>
               </button>
             </div>
 
             {/* Stats Counter */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
               {heroStats.map((stat, index) => (
                 <div 
                   key={index}
                   className="text-center group cursor-pointer transform transition-all duration-300 hover:scale-110"
                   style={{ animationDelay: `${index * 200}ms` }}
                 >
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 backdrop-blur-sm group-hover:bg-primary-500 rounded-2xl mb-4 transition-all duration-300">
-                    <stat.icon className="w-8 h-8 text-white group-hover:text-white" />
+                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-white/20 backdrop-blur-sm group-hover:bg-primary-500 rounded-xl sm:rounded-2xl mb-2 sm:mb-4 transition-all duration-300">
+                    <stat.icon className="w-6 h-6 sm:w-8 sm:h-8 text-white group-hover:text-white" />
                   </div>
-                  <div className="text-3xl lg:text-4xl font-heading font-bold text-white mb-2 drop-shadow-lg">
+                  <div className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white mb-1 sm:mb-2 drop-shadow-lg">
                     {index === 0 ? counters.properties : index === 1 ? counters.clients : index === 2 ? counters.areas : counters.years}+
                   </div>
-                  <div className="text-gray-200 font-medium drop-shadow-md">{stat.label}</div>
+                  <div className="text-xs sm:text-sm lg:text-base text-gray-200 font-medium drop-shadow-md">{stat.label}</div>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <ChevronDown className="w-8 h-8 text-white drop-shadow-lg" />
+          <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <ChevronDown className="w-6 h-6 sm:w-8 sm:h-8 text-white drop-shadow-lg" />
           </div>
 
           {/* Hero Slide Indicators */}
-          <div className="absolute bottom-8 right-8 flex space-x-2">
+          <div className="absolute bottom-4 sm:bottom-8 right-4 sm:right-8 flex space-x-2">
             {heroImages.map((_, index) => (
               <button
                 key={index}

@@ -32,7 +32,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-[80vh] lg:min-h-[90vh] flex items-center">
+    <section className="relative min-h-[70vh] sm:min-h-[80vh] lg:min-h-[90vh] xl:min-h-[95vh] flex items-center">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -43,46 +43,46 @@ export function Hero() {
       
       <div className="relative z-10 container-custom text-white">
         <div className="max-w-4xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
+          <h1 className="heading-xl mb-4 sm:mb-6">
             Find Your Perfect
             <span className="text-primary-500"> Dream Home</span>
-            <br />
-            in Bengaluru
+            <br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>in Bengaluru
           </h1>
           
-          <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-2xl">
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-6 sm:mb-8 max-w-2xl leading-relaxed">
             Discover premium properties with the best amenities and locations. 
             Your journey to homeownership starts here.
           </p>
 
           {/* Search Form */}
-          <form onSubmit={handleSearch} className="bg-white p-6 rounded-2xl shadow-card max-w-4xl">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          <form onSubmit={handleSearch} className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl lg:rounded-2xl shadow-card max-w-5xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
               {/* Location */}
-              <div className="lg:col-span-2">
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  <MapPin className="w-4 h-4 inline mr-1" />
+              <div className="sm:col-span-2 xl:col-span-2">
+                <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-2">
+                  <MapPin className="w-3 h-3 sm:w-4 sm:h-4 inline mr-1" />
                   Location
                 </label>
                 <input
                   type="text"
-                  placeholder="Search by city, area, or landmark"
+                  placeholder="Search by city, area..."
                   value={searchData.location}
                   onChange={(e) => setSearchData({ ...searchData, location: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg xl:rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                 />
               </div>
 
               {/* Property Type */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  <Home className="w-4 h-4 inline mr-1" />
-                  Property Type
+                <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-2">
+                  <Home className="w-3 h-3 sm:w-4 sm:h-4 inline mr-1" />
+                  Type
                 </label>
                 <select
                   value={searchData.propertyType}
                   onChange={(e) => setSearchData({ ...searchData, propertyType: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg xl:rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                 >
                   <option value="">All Types</option>
                   <option value="apartment">Apartment</option>
@@ -94,14 +94,14 @@ export function Hero() {
 
               {/* Price Range */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  <DollarSign className="w-4 h-4 inline mr-1" />
+                <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-2">
+                  <DollarSign className="w-3 h-3 sm:w-4 sm:h-4 inline mr-1" />
                   Budget
                 </label>
                 <select
                   value={searchData.priceRange}
                   onChange={(e) => setSearchData({ ...searchData, priceRange: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg xl:rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                 >
                   <option value="">Any Budget</option>
                   <option value="0-10000000">Under ₹1 Cr</option>
@@ -113,14 +113,14 @@ export function Hero() {
 
               {/* Bedrooms */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  <Bed className="w-4 h-4 inline mr-1" />
+                <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-2">
+                  <Bed className="w-3 h-3 sm:w-4 sm:h-4 inline mr-1" />
                   Bedrooms
                 </label>
                 <select
                   value={searchData.bedrooms}
                   onChange={(e) => setSearchData({ ...searchData, bedrooms: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg xl:rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                 >
                   <option value="">Any</option>
                   <option value="1">1 BHK</option>
@@ -133,9 +133,9 @@ export function Hero() {
 
             <button
               type="submit"
-              className="group w-full mt-6 bg-primary-500 hover:bg-primary-600 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 transform hover:scale-105 hover:shadow-xl active:scale-95"
+              className="group w-full mt-4 sm:mt-6 bg-primary-500 hover:bg-primary-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-lg xl:rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 transform hover:scale-105 hover:shadow-xl active:scale-95 text-sm sm:text-base"
             >
-              <Search className="w-5 h-5 transition-transform duration-300 group-hover:rotate-12" />
+              <Search className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:rotate-12" />
               <span>Search Properties</span>
             </button>
           </form>
@@ -143,38 +143,38 @@ export function Hero() {
       </div>
 
       {/* Stats */}
-      <div className="absolute bottom-8 left-0 right-0 z-10">
+      <div className="absolute bottom-4 sm:bottom-8 left-0 right-0 z-10">
         <div className="container-custom">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-8">
             <div className="text-center text-white">
-              <div className="text-2xl lg:text-3xl font-heading font-bold text-primary-500">
+              <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-heading font-bold text-primary-500">
                 1000+
               </div>
-              <div className="text-sm lg:text-base text-gray-200">
+              <div className="text-xs sm:text-sm lg:text-base text-gray-200">
                 Properties Listed
               </div>
             </div>
             <div className="text-center text-white">
-              <div className="text-2xl lg:text-3xl font-heading font-bold text-primary-500">
+              <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-heading font-bold text-primary-500">
                 500+
               </div>
-              <div className="text-sm lg:text-base text-gray-200">
+              <div className="text-xs sm:text-sm lg:text-base text-gray-200">
                 Happy Families
               </div>
             </div>
             <div className="text-center text-white">
-              <div className="text-2xl lg:text-3xl font-heading font-bold text-primary-500">
+              <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-heading font-bold text-primary-500">
                 25+
               </div>
-              <div className="text-sm lg:text-base text-gray-200">
+              <div className="text-xs sm:text-sm lg:text-base text-gray-200">
                 Areas Covered
               </div>
             </div>
             <div className="text-center text-white">
-              <div className="text-2xl lg:text-3xl font-heading font-bold text-primary-500">
+              <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-heading font-bold text-primary-500">
                 15+
               </div>
-              <div className="text-sm lg:text-base text-gray-200">
+              <div className="text-xs sm:text-sm lg:text-base text-gray-200">
                 Years Experience
               </div>
             </div>

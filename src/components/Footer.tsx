@@ -38,50 +38,54 @@ const socialLinks = [
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container-custom py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+      <div className="container-custom section-padding-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 lg:gap-8">
           {/* Company Info */}
-          <div className="lg:col-span-2">
+          <div className="sm:col-span-2 lg:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
                 <Home className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-heading font-bold">
+              <span className="text-lg sm:text-xl font-heading font-bold">
                 MakeMyPropertyz
               </span>
             </Link>
-            <p className="text-gray-300 mb-6 max-w-md">
+            <p className="text-gray-300 mb-4 sm:mb-6 max-w-md text-sm sm:text-base leading-relaxed">
               Your trusted partner in finding the perfect property in Bangalore. 
               We make real estate simple, transparent, and accessible for everyone.
             </p>
             
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-primary-500 flex-shrink-0" />
-                <span className="text-gray-300">
+            <div className="space-y-2 sm:space-y-3">
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary-500 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-300 text-sm sm:text-base leading-relaxed">
                   7, Jnanabharathi BDA Layout, Jnana Ganga Nagar, Bengaluru, Karnataka 560056
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-primary-500 flex-shrink-0" />
-                <span className="text-gray-300">+91-85510-78551</span>
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-primary-500 flex-shrink-0" />
+                <a href="tel:+918551078551" className="text-gray-300 hover:text-primary-500 transition-colors duration-200 text-sm sm:text-base">
+                  +91-85510-78551
+                </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-primary-500 flex-shrink-0" />
-                <span className="text-gray-300">info@makemypropertyz.com</span>
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary-500 flex-shrink-0" />
+                <a href="mailto:info@makemypropertyz.com" className="text-gray-300 hover:text-primary-500 transition-colors duration-200 text-sm sm:text-base">
+                  info@makemypropertyz.com
+                </a>
               </div>
             </div>
           </div>
 
           {/* Properties Links */}
-          <div>
-            <h3 className="font-heading font-semibold mb-4">Properties</h3>
+          <div className="sm:col-span-1">
+            <h3 className="font-heading font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Properties</h3>
             <ul className="space-y-2">
               {footerLinks.properties.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block"
                   >
                     {link.name}
                   </Link>
@@ -91,14 +95,14 @@ export function Footer() {
           </div>
 
           {/* Company Links */}
-          <div>
-            <h3 className="font-heading font-semibold mb-4">Company</h3>
+          <div className="sm:col-span-1">
+            <h3 className="font-heading font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Company</h3>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block"
                   >
                     {link.name}
                   </Link>
@@ -108,14 +112,14 @@ export function Footer() {
           </div>
 
           {/* Resources Links */}
-          <div>
-            <h3 className="font-heading font-semibold mb-4">Resources</h3>
+          <div className="sm:col-span-1">
+            <h3 className="font-heading font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Resources</h3>
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block"
                   >
                     {link.name}
                   </Link>
@@ -125,14 +129,14 @@ export function Footer() {
           </div>
 
           {/* Legal Links */}
-          <div>
-            <h3 className="font-heading font-semibold mb-4">Legal</h3>
+          <div className="sm:col-span-1">
+            <h3 className="font-heading font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Legal</h3>
             <ul className="space-y-2">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block"
                   >
                     {link.name}
                   </Link>
@@ -143,26 +147,26 @@ export function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
-            <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-4">
-              <p className="text-gray-300">
+        <div className="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8">
+          <div className="flex flex-col space-y-4 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
+            <div className="flex flex-col space-y-2 sm:flex-row sm:items-center sm:space-y-0 sm:space-x-4">
+              <p className="text-gray-300 text-sm">
                 © 2025 MakeMyPropertyz. All rights reserved.
               </p>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-400 text-xs sm:text-sm">
                 RERA Registration: PRM/KA/RERA/1251/446/AG/010/2024
               </p>
             </div>
             
-            <div className="flex items-center space-x-4 mt-4 lg:mt-0">
+            <div className="flex items-center space-x-3">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
                   href={social.href}
-                  className="w-10 h-10 bg-gray-800 hover:bg-primary-500 rounded-lg flex items-center justify-center transition-colors duration-200"
+                  className="w-8 h-8 sm:w-10 sm:h-10 bg-gray-800 hover:bg-primary-500 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110"
                   aria-label={social.name}
                 >
-                  <social.icon className="w-5 h-5" />
+                  <social.icon className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
               ))}
             </div>
