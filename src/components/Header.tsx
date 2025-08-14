@@ -20,11 +20,13 @@ export function Header() {
   return (
     <header className="bg-white shadow-soft sticky top-0 z-50">
       <div className="container-custom">
-        <div className="flex items-center justify-between h-16 lg:h-20 px-4 lg:px-6">
+        <div className="flex items-center justify-between h-16 lg:h-20 px-2 lg:px-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 lg:space-x-4">
-            <Logo className="h-8 w-auto lg:h-10" />
-            <span className="text-lg lg:text-xl font-heading font-bold text-gray-900 hidden sm:inline-block">
+          <Link to="/" className="flex items-center gap-2 lg:gap-3">
+            <div className="flex items-center">
+              <Logo className="h-10 w-auto lg:h-12 xl:h-14 drop-shadow-md rounded-2xl" />
+            </div>
+            <span className="text-base lg:text-lg font-heading font-bold text-gray-900 hidden sm:inline-block self-center">
               MakeMyPropertyz
             </span>
           </Link>
@@ -61,7 +63,7 @@ export function Header() {
             >
               {/* Animated background overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -skew-x-12 translate-x-[-100%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out"></div>
-              
+
               {/* Content container */}
               <div className="relative flex items-center space-x-2">
                 <span className="flex items-center space-x-1.5">
@@ -70,17 +72,17 @@ export function Header() {
                 </span>
                 <ExternalLink className="w-4 h-4 transition-all duration-300 transform group-hover:translate-x-1 group-hover:-translate-y-0.5" />
               </div>
-              
+
               {/* Bottom glow effect */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              
+
               {/* Floating particles effect */}
               <div className="absolute top-0 left-1/4 w-1 h-1 bg-white/60 rounded-full animate-bounce opacity-0 group-hover:opacity-100" style={{ animationDelay: '0.1s' }}></div>
               <div className="absolute top-1 right-1/4 w-0.5 h-0.5 bg-white/60 rounded-full animate-bounce opacity-0 group-hover:opacity-100" style={{ animationDelay: '0.3s' }}></div>
               <div className="absolute bottom-1 left-1/3 w-0.5 h-0.5 bg-white/60 rounded-full animate-bounce opacity-0 group-hover:opacity-100" style={{ animationDelay: '0.5s' }}></div>
             </a>
-            <Link 
-              to="/contact" 
+            <Link
+              to="/contact"
               className="btn-primary transform hover:scale-105 transition-all duration-200 hover:shadow-lg px-5 py-2.5 text-sm font-semibold"
             >
               Get Started
@@ -134,14 +136,14 @@ export function Header() {
                 >
                   {/* Animated background overlay */}
                   <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -skew-x-12 translate-x-[-100%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out"></div>
-                  
+
                   {/* Content */}
                   <div className="relative flex items-center space-x-2">
                     <span className="text-base font-bold tracking-wide">Material Hub</span>
                     <div className="w-1.5 h-1.5 bg-yellow-300 rounded-full animate-pulse"></div>
                   </div>
                   <ExternalLink className="relative w-5 h-5 transition-all duration-300 transform group-hover:translate-x-1" />
-                  
+
                   {/* Bottom glow effect */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </a>

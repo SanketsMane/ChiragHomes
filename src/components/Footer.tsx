@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Home, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import Logo from './Logo';
 
 const footerLinks = {
   properties: [
@@ -42,19 +43,19 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 lg:gap-8">
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-2">
-            <Link to="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-                <Home className="w-5 h-5 text-white" />
+            <Link to="/" className="flex items-center gap-3 mb-4">
+              <div className="flex items-center">
+                <Logo className="h-10 w-auto drop-shadow-md rounded-2xl" />
               </div>
-              <span className="text-lg sm:text-xl font-heading font-bold">
+              <span className="text-base sm:text-lg font-heading font-bold self-center">
                 MakeMyPropertyz
               </span>
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
-              Your trusted partner in finding the perfect property in Bengaluru. 
+              Your trusted partner in finding the perfect property in Bengaluru.
               We make real estate simple, transparent, and accessible for everyone.
             </p>
-            
+
             <div className="space-y-2 sm:space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary-500 flex-shrink-0 mt-0.5" />
@@ -153,7 +154,7 @@ export function Footer() {
                 RERA Registration: PRM/KA/RERA/1251/446/AG/010/2024
               </p> */}
             </div>
-            
+
             <div className="flex items-center space-x-3">
               {socialLinks.map((social) => (
                 <a

@@ -467,14 +467,16 @@ export function Contact() {
               referrerPolicy="no-referrer-when-downgrade"
               className="rounded-2xl"
             /> */}
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4025064110806!2d77.48485897358854!3d12.946076215440355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f2bf1547565%3A0xd993e81cfb693390!2sMake%20My%20Propertyz!5e0!3m2!1sen!2sin!4v1754897234565!5m2!1sen!2sin" 
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-              
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4025064110806!2d77.48485897358854!3d12.946076215440355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f2bf1547565%3A0xd993e81cfb693390!2sMake%20My%20Propertyz!5e0!3m2!1sen!2sin!4v1754897234565!5m2!1sen!2sin"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded-2xl"
+            >
             </iframe>
           </div>
         </div>
@@ -535,7 +537,7 @@ export function Contact() {
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-white font-semibold">Email Us</div>
-                <div className="text-primary-100">info@makemypropertyz.com</div>
+                <div className="text-primary-100">contact@makemypropertyz.com</div>
               </div>
 
               <div className="text-center group">
