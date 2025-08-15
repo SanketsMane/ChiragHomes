@@ -8,7 +8,7 @@ export default function Logo({ className = '', ...props }) {
     <img
       src={logo}
       alt="MakeMyPropertyz Logo"
-      className={`h-10 w-auto ${className}`}
+      className={`w-auto ${className}`}
       {...props}
     />
   );
