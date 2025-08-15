@@ -139,8 +139,8 @@ export const organizationSchema = {
   ],
   "sameAs": [
     "https://www.facebook.com/MakeMyPropertyz",
-    "https://www.instagram.com/makemypropertyz",
-    "https://www.linkedin.com/company/makemypropertyz",
+    "https://www.instagram.com/make_my_propertyz",
+    "https://www.linkedin.com/company/make-my-propertyz",
     "https://twitter.com/MakeMyPropertyz"
   ]
 };

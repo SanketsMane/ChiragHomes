@@ -1,7 +1,7 @@
 // Logo for MakeMyPropertyz
 // This is a React component rendering the logo as an <img> tag.
 
-import logo from '../assets/logo.svg';
+import logo from '../assets/mmp-logo.webp';
 
 export default function Logo({ className = '', ...props }) {
   return (

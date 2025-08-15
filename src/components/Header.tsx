@@ -24,9 +24,6 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 lg:space-x-4">
             <Logo className="h-8 w-auto lg:h-10" />
-            <span className="text-lg lg:text-xl font-heading font-bold text-gray-900 hidden sm:inline-block">
-              MakeMyPropertyz
-            </span>
           </Link>
 
           {/* Desktop Navigation */}

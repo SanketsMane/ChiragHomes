@@ -10,7 +10,7 @@ const footerLinks = {
   ],
   company: [
     { name: 'About Us', href: '/about' },
-    { name: 'Our Team', href: '/about#team' },
+    // { name: 'Our Team', href: '/about#team' },
     { name: 'Careers', href: '/careers' },
     { name: 'Contact', href: '/contact' },
   ],
@@ -29,11 +29,11 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { name: 'Facebook', icon: Facebook, href: '#' },
-  { name: 'Twitter', icon: Twitter, href: '#' },
-  { name: 'Instagram', icon: Instagram, href: '#' },
-  { name: 'LinkedIn', icon: Linkedin, href: '#' },
-];
+  { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/MakeMyPropertyz' },
+  { name: 'Twitter', icon: Twitter, href: 'https://www.instagram.com/make_my_propertyz' },
+  { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/make_my_propertyz' },
+  { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/make-my-propertyz' },
+];``
 
 export function Footer() {
   return (
