@@ -1,6 +1,6 @@
 # Image Attribution
 
-This file contains attribution information for all images used in the MakeMyPropertyz website.
+This file contains attribution information for all images used in the ChiragHomes website.
 
 ## Hero Section
 - **Main Hero Image**: "Modern City Buildings" by Fernando @cferdo on Unsplash

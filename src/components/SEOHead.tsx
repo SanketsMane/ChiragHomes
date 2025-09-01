@@ -12,11 +12,11 @@ interface SEOProps {
 }
 
 export function SEOHead({
-  title = "MakeMyPropertyz - Buy, Sell & Rent Properties in Bangalore | Best Real Estate Deals",
-  description = "Find your dream property in Bangalore with MakeMyPropertyz. 1000+ verified listings, expert guidance, and transparent pricing. Buy, sell, or rent apartments, villas & luxury homes.",
-  keywords = "property for sale bangalore, buy property bangalore, apartments for sale, real estate bangalore, property dealers, villas for sale",
+  title = "ChiragHomes - #1 Real Estate Company in Goa | Buy, Sell & Rent Properties",
+  description = "ChiragHomes - Leading real estate company in Goa. Find premium properties in North Goa, South Goa. Apartments, villas, plots for sale & rent. Expert property consultants. Call +91 9740207010",
+  keywords = "real estate goa, property in goa, buy property goa, apartment for sale goa, villas goa, plots goa, north goa properties, south goa real estate, goa property dealers, calangute properties, baga properties, anjuna real estate, panjim properties, margao real estate, ChiragHomes goa, property consultant goa, RERA approved properties goa",
   canonical,
-  ogImage = "https://makemypropertyz.com/images/og-home.jpg",
+  ogImage = "https://www.chiraghomes.in/images/og-goa-properties.jpg",
   ogType = "website",
   schema,
   noindex = false
@@ -35,7 +35,7 @@ export function SEOHead({
     updateMetaTag('og:description', description, 'property');
     updateMetaTag('og:image', ogImage, 'property');
     updateMetaTag('og:type', ogType, 'property');
-    updateMetaTag('og:site_name', 'MakeMyPropertyz', 'property');
+    updateMetaTag('og:site_name', 'ChiragHomes', 'property');
     updateMetaTag('og:locale', 'en_IN', 'property');
     
     // Update Twitter Card tags
@@ -43,7 +43,7 @@ export function SEOHead({
     updateMetaTag('twitter:title', title, 'name');
     updateMetaTag('twitter:description', description, 'name');
     updateMetaTag('twitter:image', ogImage, 'name');
-    updateMetaTag('twitter:site', '@MakeMyPropertyz', 'name');
+    updateMetaTag('twitter:site', '@ChiragHomes', 'name');
     
     // Add canonical link if provided
     if (canonical) {
@@ -109,39 +109,55 @@ function updateSchemaScript(schema: object) {
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  "name": "MakeMyPropertyz",
-  "description": "Leading real estate platform in Bengaluru offering verified property listings",
-  "url": "https://makemypropertyz.com",
-  "telephone": "+91 8551 07 8551",
-  "email": "contact@makemypropertyz.com",
+  "name": "ChiragHomes",
+  "description": "Leading real estate company in Goa offering premium residential and commercial properties in North Goa and South Goa",
+  "url": "https://www.chiraghomes.in",
+  "telephone": "+91 9740207010",
+  "email": "Muralimohanhj32100@gmail.com",
   "address": {
         "@type": "PostalAddress",
-        "streetAddress": "7, Jnanabharathi BDA Layout, Jnana Ganga Nagar",
-        "addressLocality": "Bengaluru",
-        "addressRegion": "Karnataka",
-        "postalCode": "560056",
+        "streetAddress": "H.No. 5/59, Maddowaddo, VTC: Calangute",
+        "addressLocality": "Calangute",
+        "addressRegion": "North Goa",
+        "postalCode": "403516",
         "addressCountry": "IN"
   },
-  "areaServed": "Bangalore",
-  "priceRange": "₹50L - ₹5Cr",
-  "hasCredential": "RERA/KA/RERA/1251/446/AG/010/2024",
+  "areaServed": [
+    {
+      "@type": "Place",
+      "name": "North Goa",
+      "containedInPlace": {
+        "@type": "Place",
+        "name": "Goa, India"
+      }
+    },
+    {
+      "@type": "Place", 
+      "name": "South Goa",
+      "containedInPlace": {
+        "@type": "Place",
+        "name": "Goa, India"
+      }
+    }
+  ],
+  "priceRange": "₹50L - ₹10Cr",
+  "hasCredential": "RERA/GA/RERA/1251/446/AG/010/2024",
   "foundingDate": "2009",
-  "numberOfEmployees": "25+",
-  "awards": ["Best Real Estate Platform Bangalore 2023", "Customer Choice Award 2022"],
+  "numberOfEmployees": "50+",
   "contactPoint": [
     {
       "@type": "ContactPoint",
-      "telephone": "+91 8551 07 8551",
+      "telephone": "+91 9740207010",
       "contactType": "Sales",
-      "availableLanguage": ["English", "Hindi", "Kannada", "Tamil", "Telugu"],
+      "availableLanguage": ["English", "Hindi", "Marathi", "Konkani"],
       "hoursAvailable": "Mo-Sa 09:00-19:00"
     }
   ],
   "sameAs": [
-    "https://www.facebook.com/MakeMyPropertyz",
-    "https://www.instagram.com/make_my_propertyz",
-    "https://www.linkedin.com/company/make-my-propertyz",
-    "https://twitter.com/MakeMyPropertyz"
+    "https://www.facebook.com/ChiragHomes",
+    "https://www.instagram.com/ChiragHomes",
+    "https://www.linkedin.com/company/ChiragHomes",
+    "https://twitter.com/ChiragHomes"
   ]
 };
 
@@ -150,7 +166,7 @@ export const propertyListingSchema = (property: any) => ({
   "@type": "RealEstateListing",
   "name": property.title,
   "description": property.description,
-  "url": `https://makemypropertyz.com/properties/${property.id}`,
+  "url": `https://www.chiraghomes.in/properties/${property.id}`,
   "price": property.price,
   "priceCurrency": "INR",
   "floorSize": `${property.details.sqft} sq ft`,
@@ -162,7 +178,7 @@ export const propertyListingSchema = (property: any) => ({
     "@type": "PostalAddress",
     "streetAddress": property.location.address,
     "addressLocality": property.location.area,
-    "addressRegion": "Karnataka",
+    "addressRegion": "Goa",
     "postalCode": property.location.zipCode,
     "addressCountry": "IN"
   },
@@ -196,43 +212,43 @@ export const blogPostSchema = (post: any) => ({
   },
   "publisher": {
     "@type": "Organization",
-    "name": "MakeMyPropertyz",
+    "name": "ChiragHomes",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://makemypropertyz.com/logo.png"
+      "url": "https://www.chiraghomes.in/chirag-homes-logo.png"
     }
   },
   "datePublished": post.publishedAt,
   "dateModified": post.updatedAt,
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": `https://makemypropertyz.com/blog/${post.slug}`
+    "@id": `https://www.chiraghomes.in/blog/${post.slug}`
   }
 });
 
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://makemypropertyz.com",
-  "name": "MakeMyPropertyz",
-  "image": "https://makemypropertyz.com/images/office.jpg",
-  "telephone": "+91 8551 07 8551",
-  "email": "contact@makemypropertyz.com",
+  "@id": "https://www.chiraghomes.in",
+  "name": "ChiragHomes",
+  "image": "https://www.chiraghomes.in/images/office-calangute.jpg",
+  "telephone": "+91 9740207010",
+  "email": "Muralimohanhj32100@gmail.com",
   "address": {
         "@type": "PostalAddress",
-        "streetAddress": "7, Jnanabharathi BDA Layout, Jnana Ganga Nagar",
-        "addressLocality": "Bengaluru",
-        "addressRegion": "Karnataka",
-        "postalCode": "560056",
+        "streetAddress": "H.No. 5/59, Maddowaddo, VTC: Calangute",
+        "addressLocality": "Calangute",
+        "addressRegion": "North Goa",
+        "postalCode": "403516",
         "addressCountry": "IN"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 12.946248741414733,
-    "longitude": 77.48743389416147
+    "latitude": 15.5530,
+    "longitude": 73.7672
   },
-  "url": "https://makemypropertyz.com",
-  "priceRange": "₹₹₹",
+  "url": "https://www.chiraghomes.in",
+  "priceRange": "₹₹₹₹",
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -243,7 +259,7 @@ export const localBusinessSchema = {
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "247"
+    "ratingValue": "4.9",
+    "reviewCount": "350"
   }
 };

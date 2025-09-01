@@ -1,7 +1,7 @@
-# 🚀 MakeMyPropertyz - Complete SEO Optimization Guide
+# 🚀 ChiragHomes - Complete SEO Optimization Guide
 
 ## 📊 Executive Summary
-This comprehensive SEO guide is designed to transform MakeMyPropertyz into a high-ranking real estate website in India. Our strategy targets high-volume keywords, implements technical SEO best practices, and creates engaging content to drive organic traffic and property inquiries.
+This comprehensive SEO guide is designed to transform ChiragHomes into a high-ranking real estate website in India. Our strategy targets high-volume keywords, implements technical SEO best practices, and creates engaging content to drive organic traffic and property inquiries.
 
 ---
 
@@ -52,8 +52,8 @@ This comprehensive SEO guide is designed to transform MakeMyPropertyz into a hig
 #### 🏠 **HOME PAGE**
 ```html
 <!-- Optimized Title & Meta -->
-<title>MakeMyPropertyz - Buy, Sell & Rent Properties in Bangalore | Best Real Estate Deals</title>
-<meta name="description" content="Find your dream property in Bangalore with MakeMyPropertyz. 1000+ verified listings, expert guidance, and transparent pricing. Buy, sell, or rent apartments, villas & luxury homes." />
+<title>ChiragHomes - Buy, Sell & Rent Properties in Bangalore | Best Real Estate Deals</title>
+<meta name="description" content="Find your dream property in Bangalore with ChiragHomes. 1000+ verified listings, expert guidance, and transparent pricing. Buy, sell, or rent apartments, villas & luxury homes." />
 <meta name="keywords" content="property for sale bangalore, buy property bangalore, apartments for sale, real estate bangalore, property dealers, villas for sale" />
 
 <!-- Local Business Schema -->
@@ -61,11 +61,11 @@ This comprehensive SEO guide is designed to transform MakeMyPropertyz into a hig
 {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  "name": "MakeMyPropertyz",
+  "name": "ChiragHomes",
   "description": "Leading real estate platform in Bangalore offering verified property listings",
-  "url": "https://makemypropertyz.com",
+  "url": "https://chiraghomes.com",
   "telephone": "+91-85510-78551",
-  "email": "info@makemypropertyz.com",
+  "email": "info@chiraghomes.com",
   "address": {
         "@type": "PostalAddress",
         "streetAddress": "7, Jnanabharathi BDA Layout, Jnana Ganga Nagar",
@@ -81,14 +81,14 @@ This comprehensive SEO guide is designed to transform MakeMyPropertyz into a hig
 </script>
 
 <!-- Optimized H1-H6 Structure -->
-<h1>Find Your Dream Property in Bangalore - MakeMyPropertyz</h1>
+<h1>Find Your Dream Property in Bangalore - ChiragHomes</h1>
 <h2>Premium Real Estate Listings in Bangalore's Best Locations</h2>
-<h3>Why Choose MakeMyPropertyz?</h3>
+<h3>Why Choose ChiragHomes?</h3>
 ```
 
 #### 🏢 **PROPERTIES PAGE**
 ```html
-<title>Properties for Sale & Rent in Bangalore | 1000+ Verified Listings - MakeMyPropertyz</title>
+<title>Properties for Sale & Rent in Bangalore | 1000+ Verified Listings - ChiragHomes</title>
 <meta name="description" content="Browse 1000+ verified properties in Bangalore. Apartments, villas, plots for sale & rent. Advanced search filters, virtual tours, RERA verified listings." />
 
 <!-- Product Schema for Property Listings -->
@@ -103,7 +103,7 @@ This comprehensive SEO guide is designed to transform MakeMyPropertyz into a hig
       "@type": "RealEstateListing",
       "name": "Luxury 3BHK Apartment in Koramangala",
       "description": "Spacious 3BHK apartment with premium amenities",
-      "url": "https://makemypropertyz.com/properties/luxury-3bhk-koramangala",
+      "url": "https://chiraghomes.com/properties/luxury-3bhk-koramangala",
       "price": "₹1.5 Crore",
       "priceCurrency": "INR",
       "floorSize": "1800 sq ft",
@@ -124,15 +124,15 @@ This comprehensive SEO guide is designed to transform MakeMyPropertyz into a hig
 
 #### 📖 **ABOUT PAGE**
 ```html
-<title>About MakeMyPropertyz - 15+ Years of Real Estate Excellence in Bangalore</title>
-<meta name="description" content="Learn about MakeMyPropertyz - Bangalore's trusted real estate partner since 2009. 500+ properties sold, 1000+ happy clients, RERA certified team." />
+<title>About ChiragHomes - 15+ Years of Real Estate Excellence in Bangalore</title>
+<meta name="description" content="Learn about ChiragHomes - Bangalore's trusted real estate partner since 2009. 500+ properties sold, 1000+ happy clients, RERA certified team." />
 
 <!-- Organization Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "MakeMyPropertyz",
+  "name": "ChiragHomes",
   "foundingDate": "2009",
   "numberOfEmployees": "25+",
   "awards": ["Best Real Estate Platform Bangalore 2023", "Customer Choice Award 2022"],
@@ -143,8 +143,8 @@ This comprehensive SEO guide is designed to transform MakeMyPropertyz into a hig
 
 #### 📞 **CONTACT PAGE**
 ```html
-<title>Contact MakeMyPropertyz - Get Expert Real Estate Assistance in Bangalore</title>
-<meta name="description" content="Contact MakeMyPropertyz for property buying, selling & investment guidance in Bangalore. Call +91-85510-78551 or visit our MG Road office." />
+<title>Contact ChiragHomes - Get Expert Real Estate Assistance in Bangalore</title>
+<meta name="description" content="Contact ChiragHomes for property buying, selling & investment guidance in Bangalore. Call +91-85510-78551 or visit our MG Road office." />
 
 <!-- ContactPoint Schema -->
 <script type="application/ld+json">
@@ -153,7 +153,7 @@ This comprehensive SEO guide is designed to transform MakeMyPropertyz into a hig
   "@type": "ContactPage",
   "mainEntity": {
     "@type": "RealEstateAgent",
-    "name": "MakeMyPropertyz",
+    "name": "ChiragHomes",
     "contactPoint": [
       {
         "@type": "ContactPoint",
@@ -170,7 +170,7 @@ This comprehensive SEO guide is designed to transform MakeMyPropertyz into a hig
 
 #### 📝 **BLOG PAGE**
 ```html
-<title>Real Estate Blog - Property Tips, Market Insights & Investment Guide | MakeMyPropertyz</title>
+<title>Real Estate Blog - Property Tips, Market Insights & Investment Guide | ChiragHomes</title>
 <meta name="description" content="Expert real estate insights, property buying tips, market analysis & investment guides for Bangalore real estate. Stay updated with latest trends." />
 
 <!-- Blog Schema -->
@@ -178,11 +178,11 @@ This comprehensive SEO guide is designed to transform MakeMyPropertyz into a hig
 {
   "@context": "https://schema.org",
   "@type": "Blog",
-  "name": "MakeMyPropertyz Real Estate Blog",
+  "name": "ChiragHomes Real Estate Blog",
   "description": "Expert insights on Bangalore real estate market",
   "author": {
     "@type": "Organization",
-    "name": "MakeMyPropertyz"
+    "name": "ChiragHomes"
   }
 }
 </script>
@@ -234,9 +234,9 @@ Disallow: /webpack/
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://makemypropertyz.com/sitemap.xml
-Sitemap: https://makemypropertyz.com/blog-sitemap.xml
-Sitemap: https://makemypropertyz.com/properties-sitemap.xml
+Sitemap: https://chiraghomes.com/sitemap.xml
+Sitemap: https://chiraghomes.com/blog-sitemap.xml
+Sitemap: https://chiraghomes.com/properties-sitemap.xml
 
 # Clean URLs
 Allow: /properties/*
@@ -250,7 +250,7 @@ Allow: /blog/*
   
   <!-- Homepage - Highest Priority -->
   <url>
-    <loc>https://makemypropertyz.com</loc>
+    <loc>https://chiraghomes.com</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -258,7 +258,7 @@ Allow: /blog/*
   
   <!-- Properties Main Page -->
   <url>
-    <loc>https://makemypropertyz.com/properties</loc>
+    <loc>https://chiraghomes.com/properties</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -266,7 +266,7 @@ Allow: /blog/*
   
   <!-- Individual Property Pages -->
   <url>
-    <loc>https://makemypropertyz.com/properties/luxury-3bhk-koramangala</loc>
+    <loc>https://chiraghomes.com/properties/luxury-3bhk-koramangala</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -274,7 +274,7 @@ Allow: /blog/*
   
   <!-- Blog Posts -->
   <url>
-    <loc>https://makemypropertyz.com/blog/home-buying-guide-bangalore-2025</loc>
+    <loc>https://chiraghomes.com/blog/home-buying-guide-bangalore-2025</loc>
     <lastmod>2025-01-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -290,20 +290,20 @@ Allow: /blog/*
 ### Open Graph Tags
 ```html
 <!-- Open Graph Meta Tags -->
-<meta property="og:title" content="MakeMyPropertyz - Find Your Dream Property in Bangalore" />
+<meta property="og:title" content="ChiragHomes - Find Your Dream Property in Bangalore" />
 <meta property="og:description" content="1000+ verified property listings in Bangalore. Buy, sell, rent apartments, villas with expert guidance." />
-<meta property="og:image" content="https://makemypropertyz.com/images/og-home.jpg" />
-<meta property="og:url" content="https://makemypropertyz.com" />
+<meta property="og:image" content="https://chiraghomes.com/images/og-home.jpg" />
+<meta property="og:url" content="https://chiraghomes.com" />
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="MakeMyPropertyz" />
+<meta property="og:site_name" content="ChiragHomes" />
 <meta property="og:locale" content="en_IN" />
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="MakeMyPropertyz - Bangalore's #1 Property Platform" />
+<meta name="twitter:title" content="ChiragHomes - Bangalore's #1 Property Platform" />
 <meta name="twitter:description" content="Find verified properties in Bangalore. Expert guidance, transparent pricing, RERA certified." />
-<meta name="twitter:image" content="https://makemypropertyz.com/images/twitter-card.jpg" />
-<meta name="twitter:site" content="@MakeMyPropertyz" />
+<meta name="twitter:image" content="https://chiraghomes.com/images/twitter-card.jpg" />
+<meta name="twitter:site" content="@ChiragHomes" />
 ```
 
 ---
@@ -378,7 +378,7 @@ Q: What is the average property price in Bangalore?
 A: Property prices in Bangalore range from ₹4,000-₹15,000 per sq ft depending on location. Premium areas like Koramangala command ₹8,000-₹12,000 per sq ft.
 
 Q: How to check if a property is RERA registered?
-A: Visit the Karnataka RERA website, enter the project RERA number, and verify registration status. All MakeMyPropertyz listings are RERA verified.
+A: Visit the Karnataka RERA website, enter the project RERA number, and verify registration status. All ChiragHomes listings are RERA verified.
 
 Q: What documents are needed to buy property in Bangalore?
 A: Essential documents include sale deed, title documents, NOC from society, property tax receipts, and RERA registration certificate.
@@ -445,7 +445,7 @@ Content Types:
 
 Hashtags:
 #BangaloreProperties #RealEstateBangalore #PropertyForSale
-#InvestInBangalore #DreamHome #PropertyDeals #MakeMyPropertyz
+#InvestInBangalore #DreamHome #PropertyDeals #ChiragHomes
 ```
 
 #### LinkedIn B2B Focus
@@ -581,7 +581,7 @@ Content Strategy:
 
 ---
 
-*This comprehensive SEO strategy will position MakeMyPropertyz as the leading real estate platform in Bangalore, driving organic traffic and generating quality property leads.*
+*This comprehensive SEO strategy will position ChiragHomes as the leading real estate platform in Bangalore, driving organic traffic and generating quality property leads.*
 
 **Last Updated:** January 9, 2025  
 **Version:** 1.0  

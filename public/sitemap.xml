@@ -4,20 +4,20 @@
   
   <!-- Homepage - Highest Priority -->
   <url>
-    <loc>https://makemypropertyz.com</loc>
+    <loc>https://www.chiraghomes.in</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://makemypropertyz.com/images/og-home.jpg</image:loc>
-      <image:title>MakeMyPropertyz - Bengaluru Real Estate</image:title>
-      <image:caption>Find your dream property in Bengaluru</image:caption>
+      <image:loc>https://www.chiraghomes.in/images/og-goa-properties.jpg</image:loc>
+      <image:title>ChiragHomes - #1 Real Estate Company in Goa</image:title>
+      <image:caption>Find your dream property in Goa - North & South Goa</image:caption>
     </image:image>
   </url>
   
   <!-- Properties Main Page -->
   <url>
-    <loc>https://makemypropertyz.com/properties</loc>
+    <loc>https://www.chiraghomes.in/properties</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -25,7 +25,7 @@
   
   <!-- About Page -->
   <url>
-    <loc>https://makemypropertyz.com/about</loc>
+    <loc>https://www.chiraghomes.in/about</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -33,7 +33,7 @@
   
   <!-- Contact Page -->
   <url>
-    <loc>https://makemypropertyz.com/contact</loc>
+    <loc>https://www.chiraghomes.in/contact</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -41,133 +41,160 @@
   
   <!-- Blog Main Page -->
   <url>
-    <loc>https://makemypropertyz.com/blog</loc>
+    <loc>https://www.chiraghomes.in/blog</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
-  <!-- Individual Property Pages -->
+  <!-- North Goa Locations -->
   <url>
-    <loc>https://makemypropertyz.com/properties/luxury-3bhk-koramangala</loc>
+    <loc>https://www.chiraghomes.in/properties/calangute</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=800&fit=crop</image:loc>
-      <image:title>Luxury 3BHK Apartment in Koramangala</image:title>
-    </image:image>
   </url>
   
   <url>
-    <loc>https://makemypropertyz.com/properties/spacious-villa-whitefield</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://www.chiraghomes.in/properties/baga</loc>
+    <lastmod>2025-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1200&h=800&fit=crop</image:loc>
-      <image:title>Spacious 4BHK Villa in Whitefield</image:title>
-    </image:image>
   </url>
   
-  <!-- Location-based Landing Pages -->
   <url>
-    <loc>https://makemypropertyz.com/properties/koramangala</loc>
+    <loc>https://www.chiraghomes.in/properties/anjuna</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chiraghomes.in/properties/candolim</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chiraghomes.in/properties/sinquerim</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chiraghomes.in/properties/panjim</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- South Goa Locations -->
+  <url>
+    <loc>https://www.chiraghomes.in/properties/margao</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chiraghomes.in/properties/colva</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chiraghomes.in/properties/benaulim</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chiraghomes.in/properties/vasco</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Property Categories -->
+  <url>
+    <loc>https://www.chiraghomes.in/properties?type=apartment</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://makemypropertyz.com/properties/whitefield</loc>
+    <loc>https://www.chiraghomes.in/properties?type=villa</loc>
     <lastmod>2025-01-08</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://makemypropertyz.com/properties/indiranagar</loc>
+    <loc>https://www.chiraghomes.in/properties?type=penthouse</loc>
     <lastmod>2025-01-08</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://makemypropertyz.com/properties/hsr-layout</loc>
+    <loc>https://www.chiraghomes.in/properties?type=plot</loc>
     <lastmod>2025-01-08</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   
-  <!-- Blog Posts -->
   <url>
-    <loc>https://makemypropertyz.com/blog/home-buying-guide-Bengaluru-2025</loc>
+    <loc>https://www.chiraghomes.in/properties?status=for-sale</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chiraghomes.in/properties?status=for-rent</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Blog Posts - Goa Real Estate Focus -->
+  <url>
+    <loc>https://www.chiraghomes.in/blog/property-buying-guide-goa-2025</loc>
     <lastmod>2025-01-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://makemypropertyz.com/blog/best-areas-invest-Bengaluru-real-estate</loc>
+    <loc>https://www.chiraghomes.in/blog/best-areas-invest-north-goa-real-estate</loc>
     <lastmod>2025-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://makemypropertyz.com/blog/home-loan-interest-rates-2025-guide</loc>
+    <loc>https://www.chiraghomes.in/blog/goa-property-prices-2025-market-analysis</loc>
     <lastmod>2025-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://makemypropertyz.com/blog/rera-registration-property-verification-guide</loc>
+    <loc>https://www.chiraghomes.in/blog/beachfront-properties-goa-investment-guide</loc>
     <lastmod>2025-01-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://makemypropertyz.com/blog/rental-yield-analysis-Bengaluru-investment</loc>
+    <loc>https://www.chiraghomes.in/blog/rental-income-potential-goa-properties</loc>
     <lastmod>2025-01-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <!-- Property Categories -->
-  <url>
-    <loc>https://makemypropertyz.com/properties?type=apartment</loc>
-    <lastmod>2025-01-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://makemypropertyz.com/properties?type=villa</loc>
-    <lastmod>2025-01-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://makemypropertyz.com/properties?type=penthouse</loc>
-    <lastmod>2025-01-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://makemypropertyz.com/properties?status=for-sale</loc>
-    <lastmod>2025-01-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://makemypropertyz.com/properties?status=for-rent</loc>
-    <lastmod>2025-01-08</lastmod>
-    <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   

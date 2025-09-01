@@ -1,12 +1,12 @@
 {
-  "name": "makemypropertyz",
+  "name": "chiraghomes",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Modern React + Tailwind real-estate marketing website for Bangalore properties",
+  "description": "Modern React + Tailwind real-estate marketing website for Goa properties",
   "keywords": [
     "real-estate",
-    "bangalore",
+    "goa",
     "properties",
     "react",
     "tailwind"

@@ -4,7 +4,7 @@ export const mockAgents: Agent[] = [
   {
     id: '1',
     name: 'Priya Sharma',
-    email: 'priya.sharma@makemypropertyz.com',
+    email: 'priya.sharma@chiraghomes.com',
     phone: '+91 98765 43210',
     photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face',
     bio: 'Experienced real estate professional with over 8 years in the Bangalore market. Specializes in luxury apartments and commercial properties.',
@@ -16,7 +16,7 @@ export const mockAgents: Agent[] = [
   {
     id: '2',
     name: 'Rajesh Kumar',
-    email: 'rajesh.kumar@makemypropertyz.com',
+    email: 'rajesh.kumar@chiraghomes.com',
     phone: '+91 98765 43211',
     photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
     bio: 'Dedicated to helping families find their perfect home in Bangalore. Expert in residential properties and first-time buyer assistance.',
@@ -205,7 +205,7 @@ export const mockTestimonials: Testimonial[] = [
     location: 'Koramangala, Bangalore',
     photo: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&h=400&fit=crop&crop=face',
     rating: 5,
-    text: 'MakeMyPropertyz helped us find our dream home in just 2 weeks! Their team was professional, knowledgeable, and always available to answer our questions.',
+    text: 'ChiragHomes helped us find our dream home in just 2 weeks! Their team was professional, knowledgeable, and always available to answer our questions.',
     date: '2024-01-15',
   },
   {
@@ -223,7 +223,7 @@ export const mockTestimonials: Testimonial[] = [
     location: 'HSR Layout, Bangalore',
     photo: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face',
     rating: 5,
-    text: 'The team at MakeMyPropertyz made the entire home buying process smooth and stress-free. Highly recommended!',
+    text: 'The team at ChiragHomes made the entire home buying process smooth and stress-free. Highly recommended!',
     date: '2024-01-10',
   },
 ];

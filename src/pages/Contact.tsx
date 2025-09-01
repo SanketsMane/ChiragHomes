@@ -74,22 +74,26 @@ export function Contact() {
     {
       icon: MapPin,
       title: 'Visit Our Office',
-      details: ['7, Jnanabharathi BDA Layout, Jnana Ganga Nagar, Bengaluru, Karnataka 560056'],
-      link: 'https://share.google/HQ21ShnuwgmQQCx1r',
+      details: [
+        'H.No. 5/59, Maddowaddo',
+        'VTC: Calangute, PO: Calangute',
+        'Sub District: Bardez, North Goa',
+        'State: Goa, PIN: 403516'
+      ],
       color: 'from-blue-500 to-blue-600'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+91 8551 07 8551', '+91 8551 07 8551'],
-      link: 'tel:+918551078551',
+      details: ['+91 9740207010', 'Available 9 AM - 7 PM'],
+      link: 'tel:+919740207010',
       color: 'from-green-500 to-emerald-500'
     },
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['contact@makemypropertyz.com',],
-      link: 'mailto:contact@makemypropertyz.com',
+      details: ['Muralimohanhj32100@gmail.com'],
+      link: 'mailto:Muralimohanhj32100@gmail.com',
       color: 'from-purple-500 to-purple-600'
     },
     {
@@ -126,7 +130,7 @@ export function Contact() {
   return (
     <div className="min-h-screen bg-white">
       {/* Modern Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700 text-white py-20 lg:py-32 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700 text-white py-12 lg:py-16 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
@@ -136,37 +140,17 @@ export function Contact() {
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 backdrop-blur-sm rounded-3xl mb-8">
-              <MessageCircle className="w-10 h-10 text-white" />
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl mb-6">
+              <MessageCircle className="w-8 h-8 text-white" />
             </div>
 
-            <h1 className="text-5xl lg:text-7xl font-heading font-bold mb-6 bg-gradient-to-r from-white via-primary-100 to-white bg-clip-text text-transparent">
+            <h1 className="text-4xl lg:text-6xl font-heading font-bold mb-4 bg-gradient-to-r from-white via-primary-100 to-white bg-clip-text text-transparent">
               Contact Us
             </h1>
 
-            <p className="text-xl lg:text-2xl text-primary-100 max-w-3xl mx-auto leading-relaxed">
-              Ready to find your dream property? Get in touch with our expert team today and let us help you make your property dreams a reality.
+            <p className="text-lg lg:text-xl text-primary-100 max-w-2xl mx-auto leading-relaxed">
+              Ready to find your dream property? Get in touch with our expert team today.
             </p>
-
-            {/* Quick Contact Actions */}
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:+919876543210"
-                className="group bg-white text-primary-600 hover:bg-gray-50 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center space-x-2"
-              >
-                <Phone className="w-5 h-5" />
-                <span>Call Now</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </a>
-
-              <a
-                href="mailto:info@makemypropertyz.com"
-                className="group border-2 border-white/30 text-white hover:bg-white hover:text-primary-600 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-2 backdrop-blur-sm"
-              >
-                <Mail className="w-5 h-5" />
-                <span>Send Email</span>
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -291,7 +275,7 @@ export function Contact() {
                       type="tel"
                       {...register('phone')}
                       className="w-full px-6 py-4 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 text-lg"
-                      placeholder="+91 8551 07 8551"
+                      placeholder="+91 9740207010"
                     />
                     {errors.phone && (
                       <p className="mt-2 text-red-600 font-medium">{errors.phone.message}</p>
@@ -452,13 +436,13 @@ export function Contact() {
               Find Our Office
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Located in the heart of Bengaluru, our office is easily accessible and we're always ready to welcome you
+              Located in the heart of Goa, our office is easily accessible and we're always ready to welcome you
             </p>
           </div>
 
           <div className="bg-white rounded-3xl p-4 shadow-2xl">
             {/* <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6404675444453!2d77.61106431482246!3d12.97539949087617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167f7e5d2b0b%3A0x3a3b9a58d3e3b8e7!2sMG%20Road%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1673961234567!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6404675444453!2d77.61106431482246!3d12.97539949087617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167f7e5d2b0b%3A0x3a3b9a58d3e3b8e7!2sMG%20Road%2C%20Goa%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1673961234567!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: 0 }}
@@ -468,7 +452,7 @@ export function Contact() {
               className="rounded-2xl"
             /> */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4025064110806!2d77.48485897358854!3d12.946076215440355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f2bf1547565%3A0xd993e81cfb693390!2sMake%20My%20Propertyz!5e0!3m2!1sen!2sin!4v1754897234565!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15375.15577058436!2d73.7344300746918!3d15.549441077669377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sH.No.%205%2F59%2C%20Maddowaddo%2C%20Calangute%2C%20Bardez%2C%20North%20Goa%2C%20403516!5e0!3m2!1sen!2sin!4v1756715370726!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: 0 }}
@@ -529,7 +513,7 @@ export function Contact() {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-white font-semibold">Call Us</div>
-                <div className="text-primary-100">+91 8551 07 8551</div>
+                <div className="text-primary-100">+91 9740207010</div>
               </div>
 
               <div className="text-center group">
@@ -537,7 +521,7 @@ export function Contact() {
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-white font-semibold">Email Us</div>
-                <div className="text-primary-100">contact@makemypropertyz.com</div>
+                <div className="text-primary-100">Muralimohanhj32100@gmail.com</div>
               </div>
 
               <div className="text-center group">
@@ -545,7 +529,7 @@ export function Contact() {
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-white font-semibold">Visit Us</div>
-                <div className="text-primary-100">7, Jnanabharathi BDA Layout, Jnana Ganga Nagar, Bengaluru, Karnataka 560056</div>
+                <div className="text-primary-100">H.No. 5/59, Maddowaddo, VTC: Calangute, PO: Calangute, Sub District: Bardez, North Goa, State: Goa, PIN: 403516</div>
               </div>
             </div>
           </div>

@@ -39,7 +39,7 @@ export function getImageUrl(imagePath: string, width?: number, height?: number):
   return imagePath;
 }
 
-export function generateSEOTitle(title: string, siteName = 'MakeMyPropertyz'): string {
+export function generateSEOTitle(title: string, siteName = 'ChiragHomes'): string {
   return `${title} | ${siteName}`;
 }
 

@@ -134,7 +134,7 @@ export function Properties() {
               Find Your Perfect Property
             </h1>
             <p className="text-lg sm:text-xl text-primary-100 max-w-2xl mx-auto">
-              Discover {mockProperties.length}+ verified properties in Bengaluru
+              Discover {mockProperties.length}+ verified properties in Goa
             </p>
           </div>
 

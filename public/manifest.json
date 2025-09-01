@@ -1,10 +1,10 @@
 {
-  "name": "MakeMyPropertyz - Bengaluru Real Estate",
-  "short_name": "MakeMyPropertyz",
-  "description": "Find your dream property in Bengaluru with MakeMyPropertyz - Premium real estate listings, expert guidance, and trusted property services.",
+  "name": "ChiragHomes - Goa Real Estate",
+  "short_name": "ChiragHomes",
+  "description": "Find your dream property in Goa with ChiragHomes - Premium real estate listings, expert guidance, and trusted property services.",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#E63946",
+  "theme_color": "#22c55e",
   "background_color": "#ffffff",
   "orientation": "portrait-primary",
   "scope": "/",
@@ -17,113 +17,23 @@
   ],
   "icons": [
     {
-      "src": "/icons/icon-72x72.png",
-      "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/icons/icon-96x96.png",
-      "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/icons/icon-128x128.png",
-      "sizes": "128x128",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/icons/icon-144x144.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/icons/icon-152x152.png",
-      "sizes": "152x152",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/mmp-logo.png",
+      "src": "/chirag-homes-logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/icon-384x384.png",
-      "sizes": "384x384",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/icons/icon-512x512.png",
+      "src": "/mmp-icon.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable any"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Browse Properties",
-      "short_name": "Properties",
-      "description": "Browse all available properties",
-      "url": "/properties",
-      "icons": [
-        {
-          "src": "/icons/shortcut-properties.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
-      "name": "Contact Us",
-      "short_name": "Contact",
-      "description": "Get in touch with our experts",
-      "url": "/contact",
-      "icons": [
-        {
-          "src": "/icons/shortcut-contact.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
-      "name": "Latest Blog",
-      "short_name": "Blog",
-      "description": "Read our latest real estate insights",
-      "url": "/blog",
-      "icons": [
-        {
-          "src": "/icons/shortcut-blog.png",
-          "sizes": "96x96"
-        }
-      ]
+      "purpose": "any"
     }
   ],
   "related_applications": [
     {
       "platform": "webapp",
-      "url": "https://makemypropertyz.com/manifest.json"
+      "url": "https://chiraghomes.com/manifest.json"
     }
   ],
-  "prefer_related_applications": false,
-  "screenshots": [
-    {
-      "src": "/screenshots/desktop-home.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "MakeMyPropertyz Homepage"
-    },
-    {
-      "src": "/screenshots/mobile-home.png",
-      "sizes": "390x844",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "MakeMyPropertyz Mobile Homepage"
-    }
-  ]
+  "prefer_related_applications": false
 }

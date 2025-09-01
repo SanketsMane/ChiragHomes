@@ -36,10 +36,10 @@ export const generatePropertySchema = (property: PropertySchema) => {
   return {
     '@context': 'https://schema.org',
     '@type': 'RealEstateProperty',
-    '@id': `https://makemypropertyz.com/properties/${property.id}`,
+    '@id': `https://chiraghomes.com/properties/${property.id}`,
     name: property.name,
     description: property.description,
-    url: `https://makemypropertyz.com/properties/${property.id}`,
+    url: `https://chiraghomes.com/properties/${property.id}`,
     image: property.images,
     offers: {
       '@type': property.status === 'for-sale' ? 'Offer' : 'Lease',
@@ -50,12 +50,12 @@ export const generatePropertySchema = (property: PropertySchema) => {
       ...(property.availabilityDate && { validThrough: property.availabilityDate }),
       seller: {
         '@type': 'Organization',
-        name: 'MakeMyPropertyz',
-        url: 'https://makemypropertyz.com',
-        logo: 'https://makemypropertyz.com/images/logo.png',
+        name: 'ChiragHomes',
+        url: 'https://chiraghomes.com',
+        logo: 'https://chiraghomes.com/chirag-homes-logo.png',
         contactPoint: {
           '@type': 'ContactPoint',
-          telephone: '+91 8551 07 8551',
+          telephone: '+91 9740207010',
           contactType: 'customer service',
           areaServed: 'IN',
           availableLanguage: ['en', 'hi', 'kn']
@@ -101,7 +101,7 @@ export const generatePropertySchema = (property: PropertySchema) => {
     additionalType: `https://schema.org/${property.propertyType === 'apartment' ? 'Apartment' : 'House'}`,
     potentialAction: {
       '@type': 'ViewAction',
-      url: `https://makemypropertyz.com/properties/${property.id}`,
+      url: `https://chiraghomes.com/properties/${property.id}`,
       name: `View ${property.name}`
     }
   };
@@ -111,10 +111,10 @@ export const generatePropertyListingSchema = (properties: PropertySchema[]) => {
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    '@id': 'https://makemypropertyz.com/properties',
-    name: 'Property Listings - MakeMyPropertyz',
-    description: 'Browse premium real estate properties in Bangalore',
-    url: 'https://makemypropertyz.com/properties',
+    '@id': 'https://chiraghomes.com/properties',
+    name: 'Property Listings - ChiragHomes',
+    description: 'Browse premium real estate properties in Goa',
+    url: 'https://chiraghomes.com/properties',
     numberOfItems: properties.length,
     itemListElement: properties.map((property, index) => ({
       '@type': 'ListItem',
@@ -132,10 +132,10 @@ export const generateSearchResultsSchema = (
   return {
     '@context': 'https://schema.org',
     '@type': 'SearchResultsPage',
-    '@id': `https://makemypropertyz.com/properties?search=${encodeURIComponent(searchQuery)}`,
-    name: `Search Results for "${searchQuery}" - MakeMyPropertyz`,
-    description: `Found ${totalResults} properties matching "${searchQuery}" in Bangalore`,
-    url: `https://makemypropertyz.com/properties?search=${encodeURIComponent(searchQuery)}`,
+    '@id': `https://chiraghomes.com/properties?search=${encodeURIComponent(searchQuery)}`,
+    name: `Search Results for "${searchQuery}" - ChiragHomes`,
+    description: `Found ${totalResults} properties matching "${searchQuery}" in Goa`,
+    url: `https://chiraghomes.com/properties?search=${encodeURIComponent(searchQuery)}`,
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: totalResults,
@@ -149,7 +149,7 @@ export const generateSearchResultsSchema = (
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://makemypropertyz.com/properties?search={search_term_string}'
+        urlTemplate: 'https://chiraghomes.com/properties?search={search_term_string}'
       },
       'query-input': 'required name=search_term_string'
     }
@@ -173,13 +173,13 @@ export const generateLocalBusinessSchema = () => {
   return {
     '@context': 'https://schema.org',
     '@type': 'RealEstateAgent',
-    '@id': 'https://makemypropertyz.com/#organization',
-    name: 'MakeMyPropertyz',
+    '@id': 'https://chiraghomes.com/#organization',
+    name: 'ChiragHomes',
     alternateName: 'Make My Propertyz',
-    description: 'Premium real estate services in Bangalore - Find your dream property with expert guidance and trusted services.',
-    url: 'https://makemypropertyz.com',
-    logo: 'https://makemypropertyz.com/images/logo.png',
-    image: 'https://makemypropertyz.com/images/office.jpg',
+    description: 'Premium real estate services in Goa - Find your dream property with expert guidance and trusted services.',
+    url: 'https://chiraghomes.com',
+    logo: 'https://chiraghomes.com/images/logo.png',
+    image: 'https://chiraghomes.com/images/office.jpg',
     foundingDate: '2020',
     founder: {
       '@type': 'Person',
@@ -188,7 +188,7 @@ export const generateLocalBusinessSchema = () => {
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'MG Road',
-      addressLocality: 'Bangalore',
+      addressLocality: 'Goa',
       addressRegion: 'Karnataka',
       postalCode: '560001',
       addressCountry: 'IN'
@@ -200,7 +200,7 @@ export const generateLocalBusinessSchema = () => {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+91 8551 07 8551',
+      telephone: '+91 9740207010',
       contactType: 'customer service',
       areaServed: 'IN',
       availableLanguage: ['en', 'hi', 'kn'],
@@ -212,15 +212,15 @@ export const generateLocalBusinessSchema = () => {
       }
     },
     sameAs: [
-      'https://www.facebook.com/makemypropertyz',
-      'https://www.instagram.com/makemypropertyz',
-      'https://www.linkedin.com/company/makemypropertyz',
-      'https://twitter.com/makemypropertyz'
+      'https://www.facebook.com/ChiragHomes',
+      'https://www.instagram.com/ChiragHomes',
+      'https://www.linkedin.com/company/ChiragHomes',
+      'https://twitter.com/ChiragHomes'
     ],
     serviceArea: {
       '@type': 'City',
-      name: 'Bangalore',
-      sameAs: 'https://en.wikipedia.org/wiki/Bangalore'
+      name: 'Goa',
+      sameAs: 'https://en.wikipedia.org/wiki/Goa'
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',

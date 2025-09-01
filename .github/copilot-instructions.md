@@ -1,6 +1,6 @@
 <!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
 
-# MakeMyPropertyz - Real Estate Marketing Website
+# ChiragHomes - Real Estate Marketing Website
 
 This is a modern React + TypeScript real estate marketing website built with:
 - **Frontend**: React 19, TypeScript, Vite

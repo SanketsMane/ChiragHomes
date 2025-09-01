@@ -5,7 +5,7 @@ import App from '../App';
 describe('App', () => {
   it('renders without crashing', () => {
     render(<App />);
-    expect(screen.getByText('MakeMyPropertyz')).toBeInTheDocument();
+    expect(screen.getByText('ChiragHomes')).toBeInTheDocument();
   });
 
   it('renders the home page by default', () => {

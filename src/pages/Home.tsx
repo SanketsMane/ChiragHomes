@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../MMP LOGO.png';
 import {
   ArrowRight,
   Play,
@@ -87,7 +86,7 @@ const featuredGallery = [
     id: 1,
     image: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=3840&h=2160&fit=crop&crop=center&q=90',
     title: 'Luxury Penthouse',
-    location: 'Koramangala, Bengaluru',
+    location: 'Panaji, Goa',
     price: '₹2.5 Cr',
     type: 'Penthouse',
     bedrooms: 4,
@@ -98,7 +97,7 @@ const featuredGallery = [
     id: 2,
     image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=3840&h=2160&fit=crop&crop=center&q=90',
     title: 'Modern Villa',
-    location: 'Whitefield, Bengaluru',
+    location: 'Calangute, Goa',
     price: '₹1.8 Cr',
     type: 'Villa',
     bedrooms: 3,
@@ -109,7 +108,7 @@ const featuredGallery = [
     id: 3,
     image: 'https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?w=3840&h=2160&fit=crop&crop=center&q=90',
     title: 'Smart Apartment',
-    location: 'HSR Layout, Bengaluru',
+    location: 'Baga, Goa',
     price: '₹95 L',
     type: 'Apartment',
     bedrooms: 2,
@@ -120,7 +119,7 @@ const featuredGallery = [
     id: 4,
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=3840&h=2160&fit=crop&crop=center&q=90',
     title: 'Premium Duplex',
-    location: 'Indiranagar, Bengaluru',
+    location: 'Anjuna, Goa',
     price: '₹1.2 Cr',
     type: 'Duplex',
     bedrooms: 3,
@@ -131,7 +130,7 @@ const featuredGallery = [
     id: 5,
     image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=3840&h=2160&fit=crop&crop=center&q=90',
     title: 'Garden Villa',
-    location: 'Sarjapur, Bengaluru',
+    location: 'Margao, Goa',
     price: '₹1.5 Cr',
     type: 'Villa',
     bedrooms: 4,
@@ -209,10 +208,10 @@ export function Home() {
   return (
     <>
       <SEOHead
-        title="MakeMyPropertyz - Buy, Sell & Rent Properties in Bengaluru | Best Real Estate Deals"
-        description="Find your dream property in Bengaluru with MakeMyPropertyz. 1000+ verified listings, expert guidance, and transparent pricing. Buy, sell, or rent apartments, villas & luxury homes."
-        keywords="property for sale Bengaluru, buy property Bengaluru, apartments for sale, real estate Bengaluru, property dealers, villas for sale, property investment, RERA verified"
-        canonical="https://makemypropertyz.com"
+        title="ChiragHomes - Buy, Sell & Rent Properties in Goa | Best Real Estate Deals"
+        description="Find your dream property in Goa with ChiragHomes. 1000+ verified listings, expert guidance, and transparent pricing. Buy, sell, or rent apartments, villas & luxury homes."
+        keywords="property for sale Goa, buy property Goa, apartments for sale, real estate Goa, property dealers, villas for sale, property investment, RERA verified"
+        canonical="https://chiraghomes.com"
         schema={organizationSchema}
       />
       <main className="overflow-hidden">
@@ -249,15 +248,6 @@ export function Home() {
           {/* Hero Content */}
           <div className="relative z-20 container-custom pt-20 sm:pt-24 lg:pt-32 pb-12 sm:pb-16 lg:pb-20">
             <div className="text-center max-w-5xl mx-auto">
-              {/* Logo */}
-              <div className="mb-6 sm:mb-8 flex justify-center">
-                <img
-                  src={logo}
-                  alt="MakeMyPropertyz Logo"
-                  className="h-1 sm:h-1.5 lg:h-2 xl:h-2.5 w-auto animate-fade-in drop-shadow-xl"
-                />
-              </div>
-
               {/* Main Heading */}
               <h1 className="heading-xl text-white mb-4 sm:mb-6 animate-fade-in-delay drop-shadow-lg">
                 Find Your
@@ -267,7 +257,7 @@ export function Home() {
               </h1>
 
               <p className="text-lg sm:text-xl lg:text-2xl text-gray-100 mb-6 sm:mb-8 max-w-3xl mx-auto animate-fade-in-delay-2 drop-shadow-md leading-relaxed">
-                Discover premium properties in Bengaluru with our expert guidance and transparent pricing
+                Discover premium properties in Goa with our expert guidance and transparent pricing
               </p>
 
               {/* CTA Buttons */}
@@ -382,7 +372,7 @@ export function Home() {
                 Featured Properties
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Discover handpicked premium properties in Bengaluru's most desirable locations
+                Discover handpicked premium properties in Goa's most desirable locations
               </p>
             </div>
 
@@ -616,7 +606,7 @@ export function Home() {
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div className="text-white font-semibold">Call Us</div>
-                  <div className="text-primary-100">+91 8551 07 8551</div>
+                  <div className="text-primary-100">+91 9740207010</div>
                 </div>
 
                 <div className="text-center group">
@@ -624,7 +614,7 @@ export function Home() {
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div className="text-white font-semibold">Email Us</div>
-                  <div className="text-primary-100">contact@makemypropertyz.com</div>
+                  <div className="text-primary-100">Muralimohanhj32100@gmail.com</div>
                 </div>
 
                 <div className="text-center group">
@@ -632,7 +622,7 @@ export function Home() {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div className="text-white font-semibold">Visit Us</div>
-                  <div className="text-primary-100">Bengaluru, Karnataka</div>
+                  <div className="text-primary-100">Goa, India</div>
                 </div>
               </div>
             </div>

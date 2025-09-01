@@ -1,4 +1,4 @@
-# 🚀 MakeMyPropertyz - Deployment Guide
+# 🚀 ChiragHomes - Deployment Guide
 
 ## 📦 Build Summary
 
@@ -113,8 +113,8 @@ aws cloudfront create-invalidation --distribution-id YOUR_DIST_ID --paths "/*"
 ### Production Environment Variables:
 ```bash
 # Create .env.production file
-VITE_APP_NAME=MakeMyPropertyz
-VITE_APP_URL=https://makemypropertyz.com
+VITE_APP_NAME=ChiragHomes
+VITE_APP_URL=https://chiraghomes.com
 VITE_GA_TRACKING_ID=your-ga-id
 VITE_GTM_ID=your-gtm-id
 VITE_HOTJAR_ID=your-hotjar-id
@@ -174,6 +174,6 @@ VITE_HOTJAR_ID=your-hotjar-id
 
 ---
 
-🚀 **Your MakeMyPropertyz website is now ready for production deployment!**
+🚀 **Your ChiragHomes website is now ready for production deployment!**
 
 Choose your preferred hosting platform and follow the deployment steps above. The optimized build includes all modern SEO features and performance optimizations for maximum impact.

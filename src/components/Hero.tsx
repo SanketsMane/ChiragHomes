@@ -32,7 +32,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-[70vh] sm:min-h-[80vh] lg:min-h-[90vh] xl:min-h-[95vh] flex items-center">
+    <section className="relative min-h-[70vh] sm:min-h-[80vh] lg:min-h-[90vh] xl:min-h-[95vh] flex items-start pt-0">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -43,11 +43,11 @@ export function Hero() {
       
       <div className="relative z-10 container-custom text-white">
         <div className="max-w-4xl">
-          <h1 className="heading-xl mb-4 sm:mb-6">
+          <h1 className="heading-xl mb-0">
             Find Your Perfect
             <span className="text-primary-500"> Dream Home</span>
             <br className="hidden sm:block" />
-            <span className="sm:hidden"> </span>in Bengaluru
+            <span className="sm:hidden"> </span>in Goa
           </h1>
           
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-6 sm:mb-8 max-w-2xl leading-relaxed">

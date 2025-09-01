@@ -1,7 +1,7 @@
-# MakeMyPropertyz - Real Estate Marketing Website
+# ChiragHomes - Real Estate Marketing Website
 
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop&crop=center&q=90" alt="MakeMyPropertyz Logo" width="400"/>
+  <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop&crop=center&q=90" alt="ChiragHomes Logo" width="400"/>
   
   [![React](https://img.shields.io/badge/React-19.0-blue.svg)](https://reactjs.org/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
@@ -12,7 +12,7 @@
 
 ## 🏡 About
 
-MakeMyPropertyz is a modern, responsive real estate marketing website built with cutting-edge technologies. The platform helps users discover premium properties in Bangalore with expert guidance, transparent pricing, and innovative features.
+ChiragHomes is a modern, responsive real estate marketing website built with cutting-edge technologies. The platform helps users discover premium properties in Goa with expert guidance, transparent pricing, and innovative features.
 
 ### ✨ Key Features
 
@@ -27,7 +27,7 @@ MakeMyPropertyz is a modern, responsive real estate marketing website built with
 
 ## 🚀 Live Demo
 
-Visit the live website: [MakeMyPropertyz](http://localhost:3000)
+Visit the live website: [ChiragHomes](http://localhost:3000)
 
 ## 🛠️ Tech Stack
 
@@ -62,8 +62,8 @@ Visit the live website: [MakeMyPropertyz](http://localhost:3000)
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/makemypropertyz.git
-   cd MakeMyPropertyz
+   git clone https://github.com/your-username/chiraghomes.git
+   cd ChiragHomes
    ```
 
 2. **Install dependencies**
@@ -84,7 +84,7 @@ Visit the live website: [MakeMyPropertyz](http://localhost:3000)
 ## 🏗️ Project Structure
 
 ```
-MakeMyPropertyz/
+ChiragHomes/
 ├── public/                 # Static assets
 ├── src/
 │   ├── components/         # Reusable UI components
@@ -110,7 +110,7 @@ MakeMyPropertyz/
 ## 🎨 Design System
 
 ### Color Palette
-- **Primary**: #E63946 (Brand Red)
+- **Primary**: #22c55e (Modern Green)
 - **Secondary**: #F1FAEE (Light Gray)
 - **Accent**: #A8DADC (Light Blue)
 - **Text**: #1D3557 (Dark Blue)
@@ -208,7 +208,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 For support and questions:
-- 📧 Email: info@makemypropertyz.com
+- 📧 Email: info@chiraghomes.com
 - 📱 Phone: +91 98765 43210
 - 💬 WhatsApp: Direct chat via website button
 
@@ -254,7 +254,7 @@ netlify deploy --prod --dir=dist
 - 📱 **Phone:** 7310013030
 - 📧 **Email:** contactsanket1@gmail.com
 - 💼 **Role:** Full Stack Developer
-- 🏢 **Company:** MakeMyPropertyz
+- 🏢 **Company:** ChiragHomes
 
 ### �️ Development Contributions
 
@@ -274,7 +274,7 @@ netlify deploy --prod --dir=dist
   <h3>🎯 Built with ❤️ for Real Estate Excellence</h3>
   <p>Making property dreams come true with modern technology</p>
   
-  **MakeMyPropertyz** © 2025 - All Rights Reserved
+  **ChiragHomes** © 2025 - All Rights Reserved
   
   RERA Registration: PRM/KA/RERA/1251/446/AG/010/2024
 </div>
