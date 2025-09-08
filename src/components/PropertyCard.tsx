@@ -1,5 +1,6 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Bed, Bath, Square, Heart, Phone, Mail } from 'lucide-react';
+import { MapPin, Bed, Bath, Square, Heart, ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Property } from '../types';
 import { formatPrice, getImageUrl } from '../lib/utils';
 
@@ -9,22 +10,80 @@ interface PropertyCardProps {
 }
 
 export function PropertyCard({ property, featured = false }: PropertyCardProps) {
-  const primaryImage = property.images.find(img => img.isPrimary) || property.images[0];
-  const statusColor = property.details.status === 'for-sale' ? 'bg-green-500' : 'bg-blue-500';
-  const statusText = property.details.status === 'for-sale' ? 'For Sale' : 'For Rent';
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = property.images;
+  
+  // Auto-slide images
+  useEffect(() => {
+    if (images.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => 
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+      }, 3000); // Change image every 3 seconds
+      
+      return () => clearInterval(interval);
+    }
+  }, [images.length]);
+
+  const nextImage = () => {
+    setCurrentImageIndex(currentImageIndex === images.length - 1 ? 0 : currentImageIndex + 1);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex(currentImageIndex === 0 ? images.length - 1 : currentImageIndex - 1);
+  };
+
+  const currentImage = images[currentImageIndex];
+  const statusColor = 'bg-green-500';
+  const statusText = 'Available for Rent';
 
   return (
     <div className={`bg-white rounded-xl lg:rounded-2xl shadow-card border border-gray-100 overflow-hidden group hover:shadow-xl transition-all duration-300 transform hover:scale-105 ${featured ? 'ring-2 ring-primary-500' : ''}`}>
-      {/* Image */}
+      {/* Image Carousel */}
       <div className="relative overflow-hidden">
         <Link to={`/properties/${property.id}`}>
           <img
-            src={getImageUrl(primaryImage?.url, 600, 400)}
-            alt={primaryImage?.alt || property.title}
+            src={getImageUrl(currentImage?.url, 600, 400)}
+            alt={currentImage?.alt || property.title}
             className="w-full h-40 sm:h-48 lg:h-56 xl:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
           />
         </Link>
+        
+        {/* Image Navigation - only show if multiple images */}
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={prevImage}
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-all duration-200 opacity-0 group-hover:opacity-100"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <button
+              onClick={nextImage}
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-all duration-200 opacity-0 group-hover:opacity-100"
+              aria-label="Next image"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+            
+            {/* Image Indicators */}
+            <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentImageIndex(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-200 ${
+                    index === currentImageIndex ? 'bg-white' : 'bg-white/50'
+                  }`}
+                  aria-label={`Go to image ${index + 1}`}
+                />
+              ))}
+            </div>
+          </>
+        )}
         
         {/* Status Badge */}
         <div className={`absolute top-2 sm:top-4 left-2 sm:left-4 ${statusColor} text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-medium`}>
@@ -53,9 +112,7 @@ export function PropertyCard({ property, featured = false }: PropertyCardProps) 
         <div className="mb-2 sm:mb-3">
           <div className="text-lg sm:text-xl lg:text-2xl font-heading font-bold text-primary-500">
             {formatPrice(property.price)}
-            {property.details.status === 'for-rent' && (
-              <span className="text-xs sm:text-sm text-gray-500 font-normal">/month</span>
-            )}
+            <span className="text-xs sm:text-sm text-gray-500 font-normal">/night</span>
           </div>
         </div>
 
@@ -89,42 +146,6 @@ export function PropertyCard({ property, featured = false }: PropertyCardProps) 
               <Square className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
               <span className="text-xs sm:text-sm font-medium">{property.details.sqft} sqft</span>
             </div>
-          </div>
-        </div>
-
-        {/* Agent Info */}
-        <div className="flex items-center justify-between pt-3 sm:pt-4 border-t border-gray-100">
-          <div className="flex items-center space-x-2 sm:space-x-3">
-            <img
-              src={property.agent.photo}
-              alt={property.agent.name}
-              className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover ring-2 ring-gray-100"
-            />
-            <div>
-              <div className="font-medium text-gray-900 text-xs sm:text-sm">
-                {property.agent.name}
-              </div>
-              <div className="text-xs text-gray-500">
-                {property.agent.experience}+ years exp.
-              </div>
-            </div>
-          </div>
-          
-          <div className="flex items-center space-x-1 sm:space-x-2">
-            <a
-              href={`tel:${property.agent.phone}`}
-              className="w-7 h-7 sm:w-8 sm:h-8 bg-primary-50 hover:bg-primary-100 text-primary-500 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110"
-              aria-label="Call agent"
-            >
-              <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
-            </a>
-            <a
-              href={`mailto:${property.agent.email}`}
-              className="w-7 h-7 sm:w-8 sm:h-8 bg-primary-50 hover:bg-primary-100 text-primary-500 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110"
-              aria-label="Email agent"
-            >
-              <Mail className="w-3 h-3 sm:w-4 sm:h-4" />
-            </a>
           </div>
         </div>
       </div>

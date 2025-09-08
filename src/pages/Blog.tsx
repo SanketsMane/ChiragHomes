@@ -1,111 +1,31 @@
 import { useState } from 'react';
 import { Calendar, User, Tag, Clock, ArrowRight, Search } from 'lucide-react';
-
-// Mock blog data
-const blogPosts = [
-  {
-    id: 1,
-    title: 'Top 10 Real Estate Investment Tips for 2024',
-    excerpt: 'Discover the latest trends and strategies for making smart real estate investments in today\'s market.',
-    content: 'Real estate investment continues to be one of the most reliable ways to build wealth...',
-    author: 'Rajesh Kumar',
-    publishDate: '2024-01-15',
-    readTime: '8 min read',
-    category: 'Investment',
-    tags: ['Investment', 'Tips', 'Market Trends'],
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=400&fit=crop&crop=center',
-    featured: true
-  },
-  {
-    id: 2,
-    title: 'Goa\'s Emerging Neighborhoods to Watch',
-    excerpt: 'Explore up-and-coming areas in Goa that offer great potential for homebuyers and investors.',
-    content: 'Goa continues to evolve as India\'s tourism capital...',
-    author: 'Priya Sharma',
-    publishDate: '2024-01-12',
-    readTime: '6 min read',
-    category: 'Location Guide',
-    tags: ['Goa', 'Neighborhoods', 'Market Analysis'],
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=400&fit=crop&crop=center',
-    featured: false
-  },
-  {
-    id: 3,
-    title: 'Home Buying Checklist: What First-Time Buyers Need to Know',
-    excerpt: 'A comprehensive guide for first-time home buyers navigating the property purchase process.',
-    content: 'Buying your first home is an exciting milestone...',
-    author: 'Amit Patel',
-    publishDate: '2024-01-10',
-    readTime: '10 min read',
-    category: 'Home Buying',
-    tags: ['First-time Buyers', 'Checklist', 'Guide'],
-    image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=400&fit=crop&crop=center',
-    featured: false
-  },
-  {
-    id: 4,
-    title: 'Understanding Property Valuation: A Complete Guide',
-    excerpt: 'Learn how property valuation works and what factors influence the value of your real estate.',
-    content: 'Property valuation is a critical aspect of real estate...',
-    author: 'Sneha Reddy',
-    publishDate: '2024-01-08',
-    readTime: '7 min read',
-    category: 'Education',
-    tags: ['Valuation', 'Education', 'Property Value'],
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop&crop=center',
-    featured: false
-  },
-  {
-    id: 5,
-    title: 'Market Report: Q4 2023 Real Estate Trends',
-    excerpt: 'Comprehensive analysis of real estate market performance and trends in the fourth quarter of 2023.',
-    content: 'The final quarter of 2023 showed interesting developments...',
-    author: 'Rajesh Kumar',
-    publishDate: '2024-01-05',
-    readTime: '12 min read',
-    category: 'Market Report',
-    tags: ['Market Report', 'Trends', 'Analysis'],
-    image: 'https://images.unsplash.com/photo-1460472178825-e5240623afd5?w=800&h=400&fit=crop&crop=center',
-    featured: true
-  },
-  {
-    id: 6,
-    title: 'Sustainable Housing: Green Building Features to Look For',
-    excerpt: 'Discover eco-friendly features that make properties more sustainable and cost-effective.',
-    content: 'Sustainable housing is becoming increasingly important...',
-    author: 'Priya Sharma',
-    publishDate: '2024-01-03',
-    readTime: '5 min read',
-    category: 'Sustainability',
-    tags: ['Green Building', 'Sustainability', 'Eco-friendly'],
-    image: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=400&fit=crop&crop=center',
-    featured: false
-  }
-];
+import { mockBlogPosts } from '../lib/data';
 
 const categories = [
   'All Categories',
-  'Investment',
-  'Location Guide',
-  'Home Buying',
-  'Education',
-  'Market Report',
-  'Sustainability'
+  'Accommodation',
+  'Travel Guide',
+  'Booking Tips',
+  'Goa Tourism',
+  'Pricing',
+  'Family Travel'
 ];
 
 export function Blog() {
   const [selectedCategory, setSelectedCategory] = useState('All Categories');
   const [searchTerm, setSearchTerm] = useState('');
 
-  const filteredPosts = blogPosts.filter(post => {
-    const matchesCategory = selectedCategory === 'All Categories' || post.category === selectedCategory;
+  const filteredPosts = mockBlogPosts.filter(post => {
+    const matchesCategory = selectedCategory === 'All Categories' || 
+                           post.tags.some(tag => tag.toLowerCase().includes(selectedCategory.toLowerCase()));
     const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          post.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
     return matchesCategory && matchesSearch;
   });
 
-  const featuredPost = blogPosts.find(post => post.featured);
+  const featuredPost = mockBlogPosts.find(post => post.id === '1'); // First post as featured
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -113,10 +33,10 @@ export function Blog() {
       <div className="bg-primary-500 text-white py-16 lg:py-24">
         <div className="container-custom text-center">
           <h1 className="text-4xl lg:text-5xl font-heading font-bold mb-4">
-            Real Estate Insights
+            Accommodation & Travel Insights
           </h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
-            Stay informed with the latest trends, tips, and insights from the real estate world.
+            Get the best tips and insights for your perfect stay in Goa.
           </p>
         </div>
       </div>
@@ -144,15 +64,15 @@ export function Blog() {
                 <div className="p-8 flex flex-col justify-center">
                   <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
                     <span className="bg-primary-100 text-primary-600 px-3 py-1 rounded-full">
-                      {featuredPost.category}
+                      {featuredPost.tags[0]}
                     </span>
                     <div className="flex items-center space-x-1">
                       <Calendar className="w-4 h-4" />
-                      <span>{new Date(featuredPost.publishDate).toLocaleDateString()}</span>
+                      <span>{new Date(featuredPost.publishedAt).toLocaleDateString()}</span>
                     </div>
                     <div className="flex items-center space-x-1">
                       <Clock className="w-4 h-4" />
-                      <span>{featuredPost.readTime}</span>
+                      <span>5 min read</span>
                     </div>
                   </div>
                   
@@ -167,7 +87,7 @@ export function Blog() {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2">
                       <User className="w-4 h-4 text-gray-400" />
-                      <span className="text-sm text-gray-600">{featuredPost.author}</span>
+                      <span className="text-sm text-gray-600">{featuredPost.author.name}</span>
                     </div>
                     <button className="text-primary-500 font-medium flex items-center space-x-1 hover:text-primary-600">
                       <span>Read More</span>
@@ -227,11 +147,11 @@ export function Blog() {
               <div className="p-6">
                 <div className="flex items-center space-x-4 text-sm text-gray-500 mb-3">
                   <span className="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">
-                    {post.category}
+                    {post.tags[0]}
                   </span>
                   <div className="flex items-center space-x-1">
                     <Calendar className="w-3 h-3" />
-                    <span className="text-xs">{new Date(post.publishDate).toLocaleDateString()}</span>
+                    <span className="text-xs">{new Date(post.publishedAt).toLocaleDateString()}</span>
                   </div>
                 </div>
                 
@@ -246,11 +166,11 @@ export function Blog() {
                 <div className="flex items-center justify-between text-sm">
                   <div className="flex items-center space-x-2">
                     <User className="w-3 h-3 text-gray-400" />
-                    <span className="text-gray-600">{post.author}</span>
+                    <span className="text-gray-600">{post.author.name}</span>
                   </div>
                   <div className="flex items-center space-x-1 text-gray-500">
                     <Clock className="w-3 h-3" />
-                    <span>{post.readTime}</span>
+                    <span>5 min read</span>
                   </div>
                 </div>
                 
@@ -290,11 +210,11 @@ export function Blog() {
         {/* Newsletter Signup */}
         <div className="mt-16 bg-primary-500 text-white rounded-2xl p-8 text-center">
           <h3 className="text-2xl font-heading font-bold mb-4">
-            Stay Updated with Real Estate Insights
+            Stay Updated with Accommodation Tips
           </h3>
           <p className="text-primary-100 mb-6 max-w-2xl mx-auto">
-            Subscribe to our newsletter and get the latest real estate trends, 
-            market analysis, and investment tips delivered to your inbox.
+            Subscribe to our newsletter and get the latest accommodation tips, 
+            travel guides, and booking insights delivered to your inbox.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input

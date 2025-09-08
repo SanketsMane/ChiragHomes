@@ -110,18 +110,11 @@ export function Properties() {
     { value: 'townhouse', label: 'Townhouse' },
   ];
 
-  const statusOptions = [
-    { value: 'for-sale', label: 'For Sale' },
-    { value: 'for-rent', label: 'For Rent' },
-  ];
-
   const priceRanges = [
-    { min: 0, max: 1000000, label: 'Under ₹10 Lakh' },
-    { min: 1000000, max: 5000000, label: '₹10L - ₹50L' },
-    { min: 5000000, max: 10000000, label: '₹50L - ₹1 Cr' },
-    { min: 10000000, max: 20000000, label: '₹1 Cr - ₹2 Cr' },
-    { min: 20000000, max: 50000000, label: '₹2 Cr - ₹5 Cr' },
-    { min: 50000000, max: Infinity, label: 'Above ₹5 Cr' },
+    { min: 0, max: 2000, label: 'Under ₹2,000' },
+    { min: 2000, max: 3000, label: '₹2,000 - ₹3,000' },
+    { min: 3000, max: 5000, label: '₹3,000 - ₹5,000' },
+    { min: 5000, max: Infinity, label: 'Above ₹5,000' },
   ];
 
   return (
@@ -129,16 +122,14 @@ export function Properties() {
       {/* Hero Section with Search */}
       <div className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white">
         <div className="container-custom py-8 sm:py-12 lg:py-16">
-          <div className="text-center mb-8">
-            <h1 className="heading-lg mb-4">
-              Find Your Perfect Property
-            </h1>
-            <p className="text-lg sm:text-xl text-primary-100 max-w-2xl mx-auto">
-              Discover {mockProperties.length}+ verified properties in Goa
-            </p>
-          </div>
-
-          {/* Enhanced Search Bar */}
+        <div className="text-center mb-8">
+          <h1 className="heading-lg mb-4">
+            Find Your Perfect Accommodation
+          </h1>
+          <p className="text-lg sm:text-xl text-primary-100 max-w-2xl mx-auto">
+            Discover {mockProperties.length}+ comfortable rental accommodations in Goa
+          </p>
+        </div>          {/* Enhanced Search Bar */}
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-2xl">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -152,7 +143,7 @@ export function Properties() {
                     <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
                     <input
                       type="text"
-                      placeholder="Search by area, city..."
+                      placeholder="Search by area, beach, city..."
                       value={filters.location}
                       onChange={(e) => updateFilters({ location: e.target.value })}
                       className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent text-sm sm:text-base"
@@ -172,9 +163,9 @@ export function Properties() {
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent text-sm sm:text-base"
                   >
                     <option value="">All Types</option>
-                    {propertyTypes.map((type) => (
-                      <option key={type.value} value={type.value}>{type.label}</option>
-                    ))}
+                    <option value="room">Single Room</option>
+                    <option value="apartment">1BHK Apartment</option>
+                    <option value="villa">2BHK Villa</option>
                   </select>
                 </div>
 
@@ -208,7 +199,7 @@ export function Properties() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
           <div className="flex items-center gap-4">
             <h2 className="text-lg sm:text-xl font-semibold text-gray-900">
-              {filteredProperties.length} Properties Found
+              {filteredProperties.length} Accommodations Available
             </h2>
             
             {/* Mobile Filter Button */}
@@ -288,26 +279,24 @@ export function Properties() {
                 {/* Status Filter */}
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-3">
-                    Property Status
+                    Availability Status
                   </label>
                   <div className="space-y-2">
-                    {statusOptions.map((status) => (
-                      <label key={status.value} className="flex items-center cursor-pointer">
-                        <input
-                          type="checkbox"
-                          checked={filters.status?.includes(status.value) || false}
-                          onChange={(e) => {
-                            const currentStatus = filters.status || [];
-                            const newStatus = e.target.checked
-                              ? [...currentStatus, status.value]
-                              : currentStatus.filter(s => s !== status.value);
-                            updateFilters({ status: newStatus });
-                          }}
-                          className="w-4 h-4 text-primary-500 border-gray-300 rounded focus:ring-primary-500"
-                        />
-                        <span className="ml-2 text-sm text-gray-700">{status.label}</span>
-                      </label>
-                    ))}
+                    <label className="flex items-center cursor-pointer">
+                      <input
+                        type="checkbox"
+                        checked={filters.status?.includes('for-rent') || false}
+                        onChange={(e) => {
+                          const currentStatus = filters.status || [];
+                          const newStatus = e.target.checked
+                            ? [...currentStatus, 'for-rent']
+                            : currentStatus.filter(s => s !== 'for-rent');
+                          updateFilters({ status: newStatus });
+                        }}
+                        className="w-4 h-4 text-primary-500 border-gray-300 rounded focus:ring-primary-500"
+                      />
+                      <span className="ml-2 text-sm text-gray-700">Available for Rent</span>
+                    </label>
                   </div>
                 </div>
 
@@ -370,7 +359,7 @@ export function Properties() {
                 <div className="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
                   <Search className="w-8 h-8 text-gray-400" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">No properties found</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">No accommodations found</h3>
                 <p className="text-gray-600 mb-4">Try adjusting your search criteria</p>
                 <button
                   onClick={clearFilters}
@@ -399,7 +388,7 @@ export function Properties() {
             {filteredProperties.length > 0 && (
               <div className="text-center mt-8">
                 <p className="text-gray-600 text-sm">
-                  Showing {filteredProperties.length} of {mockProperties.length} properties
+                  Showing {filteredProperties.length} of {mockProperties.length} accommodations
                 </p>
               </div>
             )}

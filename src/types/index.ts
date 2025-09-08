@@ -17,7 +17,7 @@ export interface Property {
     sqft: number;
     lotSize?: number;
     yearBuilt?: number;
-    propertyType: 'house' | 'apartment' | 'condo' | 'townhouse' | 'land';
+    propertyType: 'house' | 'apartment' | 'condo' | 'townhouse' | 'land' | 'room' | 'villa';
     status: 'for-sale' | 'for-rent' | 'sold' | 'rented';
   };
   features: string[];
