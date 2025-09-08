@@ -92,8 +92,8 @@ export function Contact() {
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['Muralimohanhj32100@gmail.com'],
-      link: 'mailto:Muralimohanhj32100@gmail.com',
+      details: ['chiraghomes333@gmail.com'],
+      link: 'mailto:chiraghomes333@gmail.com',
       color: 'from-purple-500 to-purple-600'
     },
     {
@@ -521,7 +521,7 @@ export function Contact() {
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-white font-semibold">Email Us</div>
-                <div className="text-primary-100">Muralimohanhj32100@gmail.com</div>
+                <div className="text-primary-100">chiraghomes333@gmail.com</div>
               </div>
 
               <div className="text-center group">

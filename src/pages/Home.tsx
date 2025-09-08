@@ -50,10 +50,10 @@ const heroImages = [
 
 // Modern Hero Section Data
 const heroStats = [
-  { number: '1000+', label: 'Properties', icon: Building },
-  { number: '500+', label: 'Happy Clients', icon: User },
+  { number: '300+', label: 'Properties', icon: Building },
+  { number: '350+', label: 'Happy Clients', icon: User },
   { number: '25+', label: 'Areas', icon: MapPin },
-  { number: '15+', label: 'Years', icon: Award }
+  { number: '5+', label: 'Years', icon: Award }
 ];
 
 // Modern Services Data
@@ -180,7 +180,7 @@ export function Home() {
   }, []);
 
   const animateCounters = () => {
-    const targets = { properties: 1000, clients: 500, areas: 25, years: 15 };
+    const targets = { properties: 300, clients: 350, areas: 25, years: 5 };
     const duration = 2000;
     const steps = 60;
     const stepDuration = duration / steps;
@@ -614,7 +614,7 @@ export function Home() {
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div className="text-white font-semibold">Email Us</div>
-                  <div className="text-primary-100">Muralimohanhj32100@gmail.com</div>
+                  <div className="text-primary-100">chiraghomes333@gmail.com</div>
                 </div>
 
                 <div className="text-center group">
