@@ -19,7 +19,8 @@ import {
   Search,
   User,
   Building,
-  Sparkles
+  Sparkles,
+  Clock
 } from 'lucide-react';
 import { SEOHead, organizationSchema } from '../components/SEOHead';
 import { mockTestimonials } from '../lib/data';
@@ -50,8 +51,8 @@ const heroImages = [
 
 // Modern Hero Section Data
 const heroStats = [
-  { number: '300+', label: 'Properties', icon: Building },
-  { number: '350+', label: 'Happy Clients', icon: User },
+  { number: '300+', label: 'Properties Available', icon: Building },
+  { number: '350+', label: 'Happy Guests', icon: User },
   { number: '25+', label: 'Areas', icon: MapPin },
   { number: '5+', label: 'Years', icon: Award }
 ];
@@ -60,23 +61,23 @@ const heroStats = [
 const modernServices = [
   {
     icon: Search,
-    title: 'Smart Property Search',
-    description: 'AI-powered search to find your perfect match'
+    title: 'Easy Booking System',
+    description: 'Quick and hassle-free online booking for all property types'
   },
   {
     icon: Shield,
-    title: 'Verified Listings',
-    description: 'All properties are RERA verified and authenticated'
+    title: 'Verified Properties',
+    description: 'All properties are inspected and verified for quality and safety'
   },
   {
     icon: TrendingUp,
-    title: 'Market Analytics',
-    description: 'Real-time market insights and price predictions'
+    title: 'Flexible Stay Options',
+    description: 'Daily, weekly, and monthly rental options to suit your needs'
   },
   {
     icon: Zap,
-    title: 'Instant Connect',
-    description: 'Connect with agents instantly via chat or call'
+    title: 'Instant Confirmation',
+    description: 'Get instant booking confirmation via call or WhatsApp'
   }
 ];
 
@@ -250,14 +251,14 @@ export function Home() {
             <div className="text-center max-w-5xl mx-auto">
               {/* Main Heading */}
               <h1 className="heading-xl text-white mb-4 sm:mb-6 animate-fade-in-delay drop-shadow-lg">
-                Find Your
+                Find Your Perfect
                 <span className="block bg-gradient-to-r from-primary-300 via-primary-200 to-primary-100 bg-clip-text text-transparent">
-                  Dream Home
+                  Rental Stay
                 </span>
               </h1>
 
               <p className="text-lg sm:text-xl lg:text-2xl text-gray-100 mb-6 sm:mb-8 max-w-3xl mx-auto animate-fade-in-delay-2 drop-shadow-md leading-relaxed">
-                Discover premium properties in Goa with our expert guidance and transparent pricing
+                Comfortable furnished accommodations in Goa with flexible booking and transparent pricing
               </p>
 
               {/* CTA Buttons */}
@@ -559,6 +560,105 @@ export function Home() {
           </div>
         </section>
 
+        {/* Rental Rates & Timings Section */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-500 rounded-2xl mb-6">
+                <Building className="w-8 h-8 text-white" />
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-6">
+                Rental Rates & Information
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Affordable and comfortable accommodation options for all your needs
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+              {/* Rental Rates */}
+              <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-3xl p-8 lg:p-12">
+                <h3 className="text-3xl font-heading font-bold text-gray-900 mb-8 text-center">
+                  Daily Rental Rates
+                </h3>
+                <div className="space-y-6">
+                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-primary-200">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h4 className="text-2xl font-bold text-gray-900">Single Room</h4>
+                        <p className="text-gray-600">Perfect for solo travelers</p>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-3xl font-bold text-primary-600">₹1,499</div>
+                        <div className="text-sm text-gray-500">per day</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-primary-200">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h4 className="text-2xl font-bold text-gray-900">1 BHK</h4>
+                        <p className="text-gray-600">Ideal for couples</p>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-3xl font-bold text-primary-600">₹2,499</div>
+                        <div className="text-sm text-gray-500">per day</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-primary-200">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h4 className="text-2xl font-bold text-gray-900">2 BHK</h4>
+                        <p className="text-gray-600">Great for families</p>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-3xl font-bold text-primary-600">₹4,499</div>
+                        <div className="text-sm text-gray-500">per day</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Check-in/Check-out Information */}
+              <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 lg:p-12">
+                <h3 className="text-3xl font-heading font-bold text-gray-900 mb-8 text-center">
+                  Check-in & Check-out
+                </h3>
+                <div className="space-y-8">
+                  <div className="text-center">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-500 rounded-full mb-4">
+                      <Clock className="w-10 h-10 text-white" />
+                    </div>
+                    <h4 className="text-2xl font-bold text-gray-900 mb-2">Check-in Time</h4>
+                    <p className="text-4xl font-bold text-primary-600">2:00 PM</p>
+                    <p className="text-gray-600 mt-2">onwards</p>
+                  </div>
+                  
+                  <div className="border-t border-gray-300 pt-8">
+                    <div className="text-center">
+                      <div className="inline-flex items-center justify-center w-20 h-20 bg-gray-700 rounded-full mb-4">
+                        <Clock className="w-10 h-10 text-white" />
+                      </div>
+                      <h4 className="text-2xl font-bold text-gray-900 mb-2">Check-out Time</h4>
+                      <p className="text-4xl font-bold text-gray-700">12:00 PM</p>
+                      <p className="text-gray-600 mt-2">before</p>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-primary-500 text-white rounded-2xl p-6 text-center">
+                    <p className="text-lg font-semibold mb-2">Need early check-in or late check-out?</p>
+                    <p className="text-primary-100">Contact us for special arrangements</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Modern CTA Section */}
         <section className="py-20 bg-primary-500 relative overflow-hidden">
           {/* Background Elements */}
@@ -570,14 +670,14 @@ export function Home() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center max-w-4xl mx-auto">
               <h2 className="text-4xl lg:text-6xl font-heading font-bold text-white mb-6">
-                Ready to Find Your
+                Ready to Book Your
                 <span className="block text-primary-100">
-                  Perfect Home?
+                  Perfect Stay?
                 </span>
               </h2>
 
               <p className="text-xl text-primary-100 mb-10 max-w-2xl mx-auto">
-                Join thousands of satisfied clients who found their dream properties with our expert guidance and innovative platform.
+                Join thousands of satisfied guests who enjoyed comfortable stays with our quality rental accommodations and excellent service.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -586,7 +686,7 @@ export function Home() {
                   className="group bg-white text-primary-600 hover:bg-gray-50 px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center space-x-3"
                 >
                   <Search className="w-6 h-6" />
-                  <span>Start Your Search</span>
+                  <span>Book Now</span>
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
 
@@ -595,7 +695,7 @@ export function Home() {
                   className="group border-2 border-white/30 text-white hover:bg-white hover:text-primary-600 px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-3"
                 >
                   <Phone className="w-6 h-6" />
-                  <span>Get Free Consultation</span>
+                  <span>Get Information</span>
                 </Link>
               </div>
 
