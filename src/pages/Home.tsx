@@ -51,10 +51,10 @@ const heroImages = [
 
 // Modern Hero Section Data
 const heroStats = [
-  { number: '300+', label: 'Properties Available', icon: Building },
+  { number: '300+', label: 'Accommodations Available', icon: Building },
   { number: '350+', label: 'Happy Guests', icon: User },
-  { number: '25+', label: 'Areas', icon: MapPin },
-  { number: '5+', label: 'Years', icon: Award }
+  { number: '25+', label: 'Areas Covered', icon: MapPin },
+  { number: '5+', label: 'Years Experience', icon: Award }
 ];
 
 // Modern Services Data
@@ -86,57 +86,57 @@ const featuredGallery = [
   {
     id: 1,
     image: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=3840&h=2160&fit=crop&crop=center&q=90',
-    title: 'Luxury Penthouse',
+    title: 'Luxury Villa Stay',
     location: 'Panaji, Goa',
-    price: '₹2.5 Cr',
-    type: 'Penthouse',
+    price: '₹4,499',
+    type: 'Villa',
     bedrooms: 4,
     area: '3500',
-    features: ['Swimming Pool', 'Gym', 'Parking', 'Security']
+    features: ['Swimming Pool', 'Garden', 'Parking', 'WiFi']
   },
   {
     id: 2,
     image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=3840&h=2160&fit=crop&crop=center&q=90',
-    title: 'Modern Villa',
+    title: 'Modern 1BHK',
     location: 'Calangute, Goa',
-    price: '₹1.8 Cr',
-    type: 'Villa',
-    bedrooms: 3,
-    area: '2800',
-    features: ['Garden', 'Terrace', 'Parking', 'Security']
+    price: '₹2,499',
+    type: 'Apartment',
+    bedrooms: 1,
+    area: '800',
+    features: ['AC', 'Kitchen', 'Parking', 'WiFi']
   },
   {
     id: 3,
     image: 'https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?w=3840&h=2160&fit=crop&crop=center&q=90',
-    title: 'Smart Apartment',
+    title: 'Cozy Single Room',
     location: 'Baga, Goa',
-    price: '₹95 L',
-    type: 'Apartment',
-    bedrooms: 2,
-    area: '1200',
-    features: ['Smart Home', 'Gym', 'Pool', 'Security']
+    price: '₹1,499',
+    type: 'Room',
+    bedrooms: 1,
+    area: '300',
+    features: ['AC', 'WiFi', 'Breakfast', 'Clean']
   },
   {
     id: 4,
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=3840&h=2160&fit=crop&crop=center&q=90',
-    title: 'Premium Duplex',
+    title: 'Family 2BHK',
     location: 'Anjuna, Goa',
-    price: '₹1.2 Cr',
-    type: 'Duplex',
-    bedrooms: 3,
-    area: '2000',
-    features: ['Balcony', 'Parking', 'Lift', 'Security']
+    price: '₹3,999',
+    type: 'Apartment',
+    bedrooms: 2,
+    area: '1200',
+    features: ['Kitchen', 'Balcony', 'Parking', 'WiFi']
   },
   {
     id: 5,
     image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=3840&h=2160&fit=crop&crop=center&q=90',
-    title: 'Garden Villa',
+    title: 'Beachside Villa',
     location: 'Margao, Goa',
-    price: '₹1.5 Cr',
+    price: '₹5,999',
     type: 'Villa',
-    bedrooms: 4,
-    area: '3000',
-    features: ['Large Garden', 'Pool', 'Garage', 'Security']
+    bedrooms: 3,
+    area: '2500',
+    features: ['Beach Access', 'Pool', 'Garden', 'Security']
   }
 ];
 
@@ -145,66 +145,66 @@ export function Home() {
   const [heroSlide, setHeroSlide] = useState(0);
   const [counters, setCounters] = useState({ properties: 0, clients: 0, areas: 0, years: 0 });
 
-  // Intersection Observer for animations
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            animateCounters();
-          }
+    // Intersection Observer for animations
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateCounters();
+            }
+          });
+        },
+        { threshold: 0.3 }
+      );
+
+      const heroSection = document.getElementById('hero-section');
+      if (heroSection) observer.observe(heroSection);
+
+      return () => observer.disconnect();
+    }, []);
+
+    // Auto-scroll for featured gallery
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentSlide((prev) => (prev + 1) % featuredGallery.length);
+      }, 5000);
+      return () => clearInterval(interval);
+    }, []);
+
+    // Auto-scroll for hero background
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setHeroSlide((prev) => (prev + 1) % heroImages.length);
+      }, 4000);
+      return () => clearInterval(interval);
+    }, []);
+
+    const animateCounters = () => {
+      const targets = { properties: 300, clients: 350, areas: 25, years: 5 };
+      const duration = 2000;
+      const steps = 60;
+      const stepDuration = duration / steps;
+
+      let step = 0;
+      const timer = setInterval(() => {
+        step++;
+        const progress = step / steps;
+        const easeProgress = 1 - Math.pow(1 - progress, 3);
+
+        setCounters({
+          properties: Math.floor(targets.properties * easeProgress),
+          clients: Math.floor(targets.clients * easeProgress),
+          areas: Math.floor(targets.areas * easeProgress),
+          years: Math.floor(targets.years * easeProgress),
         });
-      },
-      { threshold: 0.3 }
-    );
 
-    const heroSection = document.getElementById('hero-section');
-    if (heroSection) observer.observe(heroSection);
-
-    return () => observer.disconnect();
-  }, []);
-
-  // Auto-scroll for featured gallery
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % featuredGallery.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
-  // Auto-scroll for hero background
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setHeroSlide((prev) => (prev + 1) % heroImages.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const animateCounters = () => {
-    const targets = { properties: 300, clients: 350, areas: 25, years: 5 };
-    const duration = 2000;
-    const steps = 60;
-    const stepDuration = duration / steps;
-
-    let step = 0;
-    const timer = setInterval(() => {
-      step++;
-      const progress = step / steps;
-      const easeProgress = 1 - Math.pow(1 - progress, 3);
-
-      setCounters({
-        properties: Math.floor(targets.properties * easeProgress),
-        clients: Math.floor(targets.clients * easeProgress),
-        areas: Math.floor(targets.areas * easeProgress),
-        years: Math.floor(targets.years * easeProgress),
-      });
-
-      if (step >= steps) {
-        clearInterval(timer);
-        setCounters(targets);
-      }
-    }, stepDuration);
-  };
+        if (step >= steps) {
+          clearInterval(timer);
+          setCounters(targets);
+        }
+      }, stepDuration);
+    };
 
   return (
     <>
@@ -268,7 +268,7 @@ export function Home() {
                   className="group bg-primary-500 hover:bg-primary-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center justify-center space-x-2"
                 >
                   <Search className="w-4 h-4 sm:w-5 sm:h-5" />
-                  <span>Explore Properties</span>
+                  <span>Explore Accommodations</span>
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
                 <button className="group border-2 border-white/80 text-white hover:bg-white hover:text-primary-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center space-x-2 backdrop-blur-sm">
@@ -329,7 +329,7 @@ export function Home() {
                 Why Choose Us?
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Experience excellence in real estate with our innovative platform and expert guidance
+                Experience comfortable stays in Goa with our quality accommodations and exceptional hospitality
               </p>
             </div>
 
@@ -370,10 +370,10 @@ export function Home() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-6">
-                Featured Properties
+                Featured Accommodations
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Discover handpicked premium properties in Goa's most desirable locations
+                Discover our handpicked comfortable stays in Goa's most desirable locations
               </p>
             </div>
 
@@ -423,7 +423,7 @@ export function Home() {
                           </div>
                         </div>
                         <div className="mt-4 lg:mt-0 lg:text-right">
-                          <div className="text-4xl lg:text-5xl font-heading font-bold text-primary-300 mb-2">{property.price}</div>
+                          <div className="text-4xl lg:text-5xl font-heading font-bold text-primary-300 mb-2">{property.price}<span className="text-2xl text-primary-200">/night</span></div>
                           <Link
                             to={`/properties/${property.id}`}
                             className="inline-flex items-center bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 space-x-2"
@@ -488,7 +488,7 @@ export function Home() {
                 to="/properties"
                 className="group inline-flex items-center bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl space-x-2"
               >
-                <span>View All Properties</span>
+                <span>View All Accommodations</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </div>
@@ -503,7 +503,7 @@ export function Home() {
                 What Our Clients Say
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Discover why thousands of families trust us with their property dreams
+                Discover why thousands of guests trust us for their comfortable stays in Goa
               </p>
             </div>
 
@@ -686,7 +686,7 @@ export function Home() {
                   className="group bg-white text-primary-600 hover:bg-gray-50 px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center space-x-3"
                 >
                   <Search className="w-6 h-6" />
-                  <span>Book Now</span>
+                  <span>Book Accommodation</span>
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
 
