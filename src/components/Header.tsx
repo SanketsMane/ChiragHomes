@@ -18,7 +18,7 @@ export function Header() {
   const location = useLocation();
 
   return (
-    <header className="bg-white shadow-soft sticky top-0 z-50">
+    <header className="bg-green-800 shadow-soft sticky top-0 z-50">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 lg:h-20 px-2 lg:px-4">
           {/* Logo */}
@@ -37,8 +37,8 @@ export function Header() {
                   className={cn(
                     'flex items-center space-x-2 px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 hover:scale-105',
                     isActive
-                      ? 'text-primary-500 bg-primary-50 shadow-sm'
-                      : 'text-gray-600 hover:text-primary-500 hover:bg-gray-50'
+                      ? 'text-yellow-300 bg-green-700 shadow-sm'
+                      : 'text-yellow-100 hover:text-yellow-300 hover:bg-green-700'
                   )}
                 >
                   <item.icon className="w-4 h-4" />
@@ -52,7 +52,7 @@ export function Header() {
           <div className="hidden lg:flex items-center space-x-3 xl:space-x-4">
             <Link
               to="/contact"
-              className="btn-primary transform hover:scale-105 transition-all duration-200 hover:shadow-lg px-5 py-2.5 text-sm font-semibold"
+              className="bg-yellow-400 hover:bg-yellow-300 text-green-800 font-semibold px-5 py-2.5 text-sm rounded-lg transform hover:scale-105 transition-all duration-200 hover:shadow-lg"
             >
               Get Started
             </Link>
@@ -61,7 +61,7 @@ export function Header() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2.5 text-gray-600 hover:text-primary-500 hover:bg-gray-50 rounded-lg transition-all duration-200 ml-2"
+            className="lg:hidden p-2.5 text-yellow-100 hover:text-yellow-300 hover:bg-green-700 rounded-lg transition-all duration-200 ml-2"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
@@ -74,7 +74,7 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 px-4 border-t border-gray-100">
+          <div className="lg:hidden py-4 px-4 border-t border-green-700">
             <nav className="flex flex-col space-y-1">
               {navigation.map((item) => {
                 const isActive = location.pathname === item.href;
@@ -86,8 +86,8 @@ export function Header() {
                     className={cn(
                       'flex items-center space-x-3 px-4 py-3 text-base font-medium rounded-lg transition-all duration-200',
                       isActive
-                        ? 'text-primary-500 bg-primary-50 shadow-sm'
-                        : 'text-gray-600 hover:text-primary-500 hover:bg-gray-50'
+                        ? 'text-yellow-300 bg-green-700 shadow-sm'
+                        : 'text-yellow-100 hover:text-yellow-300 hover:bg-green-700'
                     )}
                   >
                     <item.icon className="w-5 h-5" />
@@ -95,13 +95,13 @@ export function Header() {
                   </Link>
                 );
               })}
-              <div className="pt-4 mt-4 border-t border-gray-100 space-y-3">
+              <div className="pt-4 mt-4 border-t border-green-700 space-y-3">
                 <Link
                   to="/contact"
                   onClick={() => setIsMenuOpen(false)}
                   className="block"
                 >
-                  <span className="btn-primary w-full text-center py-3 font-semibold">
+                  <span className="bg-yellow-400 hover:bg-yellow-300 text-green-800 font-semibold w-full text-center py-3 rounded-lg block">
                     Get Started
                   </span>
                 </Link>

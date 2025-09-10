@@ -700,7 +700,7 @@ export function Home() {
               </div>
 
               {/* Contact Info */}
-              <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+              <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                 <div className="text-center group">
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl mb-4 group-hover:bg-white/20 transition-colors duration-300">
                     <Phone className="w-6 h-6 text-white" />
@@ -723,6 +723,17 @@ export function Home() {
                   </div>
                   <div className="text-white font-semibold">Visit Us</div>
                   <div className="text-primary-100">Goa, India</div>
+                </div>
+
+                <div className="text-center group">
+                  <Link
+                    to="/contact#payment"
+                    className="inline-flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl mb-4 group-hover:bg-white/20 transition-colors duration-300"
+                  >
+                    <span className="text-white text-lg font-bold">₹</span>
+                  </Link>
+                  <div className="text-white font-semibold">Pay Online</div>
+                  <div className="text-primary-100">PhonePe QR</div>
                 </div>
               </div>
             </div>

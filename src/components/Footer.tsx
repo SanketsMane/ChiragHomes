@@ -38,7 +38,7 @@ export function Footer() {
             <div className="space-y-4">
               <Link to="/" className="inline-block">
                 <img 
-                  src="/chirag-homes-logo-new.png" 
+                  src="/chirag-homes-logo-new.jpeg" 
                   alt="ChiragHomes Logo" 
                   className="h-16 w-auto drop-shadow-lg hover:drop-shadow-xl transition-all duration-300"
                 />

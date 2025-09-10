@@ -9,9 +9,9 @@ interface LogoProps {
 export default function Logo({ className = '', ...props }: LogoProps) {
   return (
     <img
-      src="/chirag-homes-logo-new.png"
+      src="/chirag-homes-logo-new.jpeg"
       alt="ChiragHomes - Building Dreams, Creating Futures"
-      className={`w-auto ${className}`}
+      className={`w-auto rounded-sm ${className}`}
       {...props}
     />
   );

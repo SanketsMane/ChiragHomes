@@ -16,7 +16,9 @@ import {
   ArrowRight,
   Globe,
   Users,
-  Star
+  Star,
+  CreditCard,
+  QrCode
 } from 'lucide-react';
 
 // Contact form validation schema
@@ -419,6 +421,129 @@ export function Contact() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Payment QR Code Section */}
+      <section id="payment" className="py-20 bg-gradient-to-br from-primary-50 to-primary-100">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-500 rounded-2xl mb-6">
+              <QrCode className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-6">
+              Easy Payment Options
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Pay securely and instantly using PhonePe. Scan the QR code below to make your payment
+            </p>
+          </div>
+
+          <div className="max-w-md mx-auto">
+            <div className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl mb-6">
+                <CreditCard className="w-8 h-8 text-white" />
+              </div>
+              
+              <h3 className="text-2xl font-heading font-bold text-gray-900 mb-4">
+                PhonePe Payment
+              </h3>
+              
+              <p className="text-gray-600 mb-6">
+                Scan the QR code with your PhonePe app to make instant payments
+              </p>
+
+              {/* QR Code Image */}
+              <div className="bg-white rounded-2xl p-4 shadow-lg border-2 border-gray-100 mb-6">
+                <img
+                  src="/phonepe-qr.jpeg"
+                  alt="PhonePe Payment QR Code - R CHAITHANYA"
+                  className="w-full max-w-xs mx-auto rounded-xl"
+                />
+              </div>
+
+              <div className="bg-purple-50 rounded-2xl p-4 border border-purple-200">
+                <p className="text-purple-800 font-semibold mb-2">Payment Information</p>
+                <p className="text-purple-700 text-sm">
+                  Recipient: <span className="font-semibold">R CHAITHANYA</span>
+                </p>
+                <p className="text-purple-600 text-xs mt-2">
+                  Scan with PhonePe app for instant payment processing
+                </p>
+              </div>
+
+              <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
+                <div className="bg-green-50 rounded-xl p-3 border border-green-200">
+                  <div className="text-green-600 font-semibold">✓ Instant</div>
+                  <div className="text-green-700 text-xs">Immediate confirmation</div>
+                </div>
+                <div className="bg-blue-50 rounded-xl p-3 border border-blue-200">
+                  <div className="text-blue-600 font-semibold">✓ Secure</div>
+                  <div className="text-blue-700 text-xs">Bank-grade security</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Payment Instructions */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg border border-gray-100">
+              <h3 className="text-2xl font-heading font-bold text-gray-900 mb-8 text-center">
+                How to Pay Using PhonePe
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl mb-4">
+                    <span className="text-white font-bold text-xl">1</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-2">Open PhonePe App</h4>
+                  <p className="text-gray-600 text-sm">Launch the PhonePe app on your smartphone</p>
+                </div>
+                
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl mb-4">
+                    <span className="text-white font-bold text-xl">2</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-2">Scan QR Code</h4>
+                  <p className="text-gray-600 text-sm">Use the scan feature to scan the QR code above</p>
+                </div>
+                
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl mb-4">
+                    <span className="text-white font-bold text-xl">3</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-2">Complete Payment</h4>
+                  <p className="text-gray-600 text-sm">Enter amount and confirm your payment securely</p>
+                </div>
+              </div>
+
+              <div className="mt-8 bg-primary-50 rounded-2xl p-6 border border-primary-200 text-center">
+                <p className="text-primary-800 font-semibold mb-2">📱 Need Help with Payment?</p>
+                <p className="text-primary-700 text-sm mb-4">
+                  Contact us for assistance with online payments or alternative payment methods
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                  <a
+                    href="tel:+919740207010"
+                    className="inline-flex items-center justify-center bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 space-x-2"
+                  >
+                    <Phone className="w-4 h-4" />
+                    <span>Call for Help</span>
+                  </a>
+                  <a
+                    href="https://wa.me/919740207010?text=Hi! I need help with payment"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center border-2 border-primary-500 text-primary-600 hover:bg-primary-500 hover:text-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 space-x-2"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    <span>WhatsApp Support</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

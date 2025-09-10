@@ -312,6 +312,39 @@ export function PropertyDetail() {
               </div>
             </div>
 
+            {/* Quick Payment Card */}
+            <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-6 shadow-card border border-primary-200">
+              <h3 className="text-lg font-heading font-semibold text-gray-900 mb-4 flex items-center">
+                <span className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center text-white text-sm font-bold mr-2">₹</span>
+                Quick Payment
+              </h3>
+              
+              <p className="text-sm text-gray-700 mb-4">
+                Pay booking amount or full rent instantly using PhonePe
+              </p>
+
+              <div className="bg-white rounded-xl p-4 mb-4">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-primary-600 mb-1">{formatPrice(property.price)}</div>
+                  <div className="text-sm text-gray-600">per night</div>
+                </div>
+              </div>
+
+              <Link
+                to="/contact#payment"
+                className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+              >
+                <span className="text-lg font-bold">₹</span>
+                <span>Pay with PhonePe</span>
+              </Link>
+
+              <div className="mt-3 text-center">
+                <div className="text-xs text-gray-600">
+                  ✓ Instant confirmation • ✓ Secure payment
+                </div>
+              </div>
+            </div>
+
             {/* Map Placeholder */}
             <div className="bg-white rounded-2xl p-6 shadow-card">
               <h3 className="text-lg font-heading font-semibold text-gray-900 mb-4">
