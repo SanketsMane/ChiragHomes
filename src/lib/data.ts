@@ -4,7 +4,7 @@ export const mockAgents: Agent[] = [
   {
     id: '1',
     name: 'ChiragHomes',
-    email: 'info@chiraghomes.com',
+    email: 'chirraghomes@gmail.com',
     phone: '+91 98765 43210',
     photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face',
     bio: 'Your trusted accommodation provider in Goa. We offer comfortable and affordable stays for all travelers.',
@@ -16,7 +16,7 @@ export const mockAgents: Agent[] = [
   {
     id: '2',
     name: 'ChiragHomes Support',
-    email: 'support@chiraghomes.com',
+    email: 'chirraghomes@gmail.com',
     phone: '+91 98765 43211',
     photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
     bio: 'Dedicated to ensuring your perfect stay experience in Goa. 24/7 customer support for all bookings.',

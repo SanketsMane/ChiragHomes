@@ -113,7 +113,7 @@ export const organizationSchema = {
   "description": "Leading real estate company in Goa offering premium residential and commercial properties in North Goa and South Goa",
   "url": "https://www.chiraghomes.in",
   "telephone": "+91 9740207010",
-  "email": "chiraghomes333@gmail.com",
+  "email": "chirraghomes@gmail.com",
   "address": {
         "@type": "PostalAddress",
         "streetAddress": "H.No. 5/59, Maddowaddo, VTC: Calangute",
@@ -233,7 +233,7 @@ export const localBusinessSchema = {
   "name": "ChiragHomes",
   "image": "https://www.chiraghomes.in/images/office-calangute.jpg",
   "telephone": "+91 9740207010",
-  "email": "chiraghomes333@gmail.com",
+  "email": "chirraghomes@gmail.com",
   "address": {
         "@type": "PostalAddress",
         "streetAddress": "H.No. 5/59, Maddowaddo, VTC: Calangute",

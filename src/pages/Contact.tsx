@@ -56,10 +56,11 @@ export function Contact() {
     setSubmitError('');
 
     try {
-      // Simulate API call
+      // Simulate API call - In production, this would send email to chirraghomes@gmail.com
       await new Promise(resolve => setTimeout(resolve, 1000));
 
       console.log('Contact form submitted:', data);
+      console.log('Email would be sent to: chirraghomes@gmail.com');
       setSubmitSuccess(true);
       reset();
 
@@ -94,8 +95,8 @@ export function Contact() {
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['chiraghomes333@gmail.com'],
-      link: 'mailto:chiraghomes333@gmail.com',
+      details: ['chirraghomes@gmail.com'],
+      link: 'mailto:chirraghomes@gmail.com',
       color: 'from-purple-500 to-purple-600'
     },
     {
@@ -646,7 +647,7 @@ export function Contact() {
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-white font-semibold">Email Us</div>
-                <div className="text-primary-100">chiraghomes333@gmail.com</div>
+                <div className="text-primary-100">chirraghomes@gmail.com</div>
               </div>
 
               <div className="text-center group">

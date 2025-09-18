@@ -104,7 +104,7 @@ import { Target, Award, TrendingUp, Shield, Heart, Phone, Mail, Sparkles, ArrowR
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-white font-semibold">Email Us</div>
-                <div className="text-primary-100">chiraghomes333@gmail.com</div>
+                <div className="text-primary-100">chirraghomes@gmail.com</div>
               </div>
 
               <div className="text-center group">
